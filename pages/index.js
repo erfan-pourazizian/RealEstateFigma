@@ -8,13 +8,17 @@ import {
   Footer,
   OurServices,
   PeopleSection,
-  Navbar
+  Navbar,
 } from "../components/index";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar/>
+    <div className="container">
+      <Head>
+        <title>Real State</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Navbar />
       <Container />
       <Discover />
       <OurServices />
