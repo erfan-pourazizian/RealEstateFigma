@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import {
   Connect,
-  Container,
+  Main,
   Discover,
   FeaturedProperties,
   Footer,
@@ -13,13 +13,13 @@ import {
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="">
       <Head>
         <title>Real State</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <Container />
+      <Main />
       <Discover />
       <OurServices />
       <FeaturedProperties />
