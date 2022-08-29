@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Main = () => {
   return (
-    <div className="flex  ">
+    <div className="flex">
       <div className='flex ml-36 flex-col '>
 
         <div className="mt-44  relative">
@@ -13,14 +13,13 @@ const Main = () => {
         </div>
         <InputForm />
       </div>
-      <div className=" grid grid-flow-col auto-cols-max gap-5 ">
+      <div className="grid grid-flow-col auto-cols-max gap-5 ">
 
-        <div className="relative  w-[690px] h-[680px] ml-5 z-0">
+        <div className="relative w-[690px] h-[680px] ml-5 z-0">
           <Image
             src={"/house.png"}
             alt="house"
             layout='fill'
-
           />
         </div>
         <div className="relative  place-self-end w-[50px] h-[680px]">
