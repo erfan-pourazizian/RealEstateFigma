@@ -9,7 +9,8 @@ module.exports = {
       colors: {
         'sp-orange': 'rgba(255, 141, 27, 1)',
         'sp-gray' : 'rgba(231, 231, 231, 1)',
-        'sp-gray2' :'rgba(79, 79, 79, 1)'
+        'sp-gray2' :'rgba(79, 79, 79, 1)',
+        'sp-gray3' :'rgba(238, 238, 238, 1)',
       },
       boxShadow: {
         'co-input-1': '0px 2px 40px rgba(0, 0, 0, 0.1)',
@@ -26,6 +27,9 @@ module.exports = {
         }],
         contactSize: ['18px', {
           lineHeight: '23px',
+        }],
+        rentH1Size: ['35px', {
+          lineHeight: '45px',
         }],
       }
     },
