@@ -1,0 +1,13 @@
+@font-face {
+    font-family: google-sans;
+    src: url('../public/fonts/ProductSans-Light.woff');
+  
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: google-sans;
+    src: url('../public/fonts/ProductSans-Bold.woff');
+  
+    font-weight: bold;
+  }
