@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from "next/dist/client/link";
 import Image from 'next/image'
-import DefaultImage from "../../public/default-house.png"
+import DefaultImage from "../../public/Images/default-house.png"
 
 const Property = ({
     property: {
@@ -33,7 +33,7 @@ const Property = ({
 
                         <div className="mr-3 flex self-end">
                             <Image
-                                src="/location.png"
+                                src="/Images/location.png"
                                 width={20}
                                 height={20}
                                 alt='location'
@@ -46,7 +46,7 @@ const Property = ({
                         <div className="flex">
                             <div className="mr-3 flex self-end ">
                                 <Image
-                                    src="/sqft.png"
+                                    src="/Images/sqft.png"
                                     width={20}
                                     height={20}
                                     alt='sqft'
@@ -58,7 +58,7 @@ const Property = ({
                         <div className="flex">
                             <div className="mr-3 ml-4 flex self-end ">
                                 <Image
-                                    src="/beds.png"
+                                    src="/Images/beds.png"
                                     width={20}
                                     height={20}
                                     alt='beds'
@@ -70,7 +70,7 @@ const Property = ({
                         <div className="flex">
                             <div className="mr-3 ml-7 flex self-end ">
                                 <Image
-                                    src="/bath.png"
+                                    src="/Images/bath.png"
                                     width={20}
                                     height={20}
                                     alt='bath'

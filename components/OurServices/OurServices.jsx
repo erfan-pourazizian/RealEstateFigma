@@ -23,7 +23,7 @@ const services = () => {
             <div className='relative w-[600px] h-[560px] z-10 bottom-10 left-32'>
               <Image
                 alt='house'
-                src={"/services-house.png"}
+                src={"/Images/services-house.png"}
                 layout="fill"
               />
             </div>
@@ -37,7 +37,7 @@ const services = () => {
             <div className='relative w-[600px] h-[560px] z-10 top-10 right-32 ml-32'>
               <Image
                 alt='house'
-                src={"/services-office.png"}
+                src={"/Images/services-office.png"}
                 layout="fill"
               />
             </div>

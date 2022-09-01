@@ -15,7 +15,7 @@ const Discover = () => {
 
         <div className='relative  w-[255px] h-[350px]' >
           <Image
-            src="/nature-1.png"
+            src="/Images/nature-1.png"
             alt='nature'
             layout='fill'
           />
@@ -23,7 +23,7 @@ const Discover = () => {
 
         <div className='relative flex flex-col bottom-12 w-[255px] h-[350px]'>
           <Image
-            src="/nature-2.png"
+            src="/Images/nature-2.png"
             alt='nature'
             layout='fill'
           />
@@ -35,7 +35,7 @@ const Discover = () => {
 
         <div className='relative  w-[255px] h-[350px]'>
           <Image
-            src="/nature-3.png"
+            src="/Images/nature-3.png"
             alt='nature'
             layout='fill'
           />
@@ -43,7 +43,7 @@ const Discover = () => {
 
         <div className='flex  relative  w-[70px] h-[350px] ml-auto'>
           <Image
-            src="/nature-4.png"
+            src="/Images/nature-4.png"
             alt='nature'
             layout='fill'
           />
