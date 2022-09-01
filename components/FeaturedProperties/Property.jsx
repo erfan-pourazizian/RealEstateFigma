@@ -7,13 +7,10 @@ const Property = ({
     property: {
         coverPhoto,
         price,
-        rentFrequency,
         rooms,
         title,
         baths,
         area,
-        agency,
-        isVerified,
         externalID,
     },
 }) => {
@@ -82,7 +79,7 @@ const Property = ({
                             <p className="text-contactSize text-sp-gray2 ">{baths} </p>
                         </div>
                     </div>
-                    <h3 className="text-3xl text-sp-orange mt-3">$ 2000</h3>
+                    <h3 className="text-3xl text-sp-orange mt-3">$ {price}</h3>
                 </div>
             </div>
         </Link>
