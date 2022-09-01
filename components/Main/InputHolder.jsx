@@ -14,8 +14,8 @@ const InputHolder = ({inputName,img,alt,op1,op2}) => {
                 alt={alt}
                 />
                 </div>
-              <select className="appearance-none bg-inherit w-full">
-                <option hidden disabled selected value></option>
+              <select defaultValue={'DEFAULT'} className="appearance-none bg-inherit w-full">
+                <option value="DEFAULT" hidden disabled  ></option>
                 <option>{op1}</option>
                 <option>{op2}</option>
               </select>
