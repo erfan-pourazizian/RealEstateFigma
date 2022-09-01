@@ -29,7 +29,7 @@ const InputForm = () => {
           </div>
 
           <div className='ml-2 col-span-2'>
-            <InputHolder inputName={"Bath"} img={"/Images/Images/bath.png"} op1={"test"} op2={"test"} />
+            <InputHolder inputName={"Bath"} img={"/Images/bath.png"} op1={"test"} op2={"test"} />
           </div>
 
         <button className=" self-end col-span-2  bg-sp-orange px-7 py-1 h-[35px] rounded-sm text-white ml-2">Submit</button>
