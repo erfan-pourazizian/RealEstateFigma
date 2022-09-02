@@ -17,13 +17,21 @@ const Property = ({
     return (
         <Link href={`/property/${externalID}`} passHref>
             <div className='flex flex-wrap w-[420px] p-5 pt-0 justify-start cursor-pointer '>
-                <div>
+                <div className='relative'>
+                    <div className='absolute w-[25%] h-[13%] top-0 left-0 z-10'>
+                        <Image
+                            src="/Images/for-rent.png"
+                            layout='fill'
+                            alt='for-rent'
+                        />
+                    </div>
                     <Image
                         src={coverPhoto ? coverPhoto.url : DefaultImage}
                         width={400}
                         height={260}
                         alt="house"
                     />
+
                 </div>
                 <div className='mt-4'>
                     <p className='text-lg text-sp-gray2 text-bold'>
@@ -79,7 +87,7 @@ const Property = ({
                             <p className="text-contactSize text-sp-gray2 ">{baths} </p>
                         </div>
                     </div>
-                    <h3 className="text-3xl text-sp-orange mt-3">$ {price}</h3>
+                    <h3 className="text-3xl font-bold text-sp-orange mt-3">$ {price}</h3>
                 </div>
             </div>
         </Link>
