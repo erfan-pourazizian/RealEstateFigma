@@ -11,7 +11,6 @@ const Property = ({
         title,
         baths,
         area,
-        location: {name},
         externalID,
     },
 }) => {
@@ -48,7 +47,7 @@ const Property = ({
                                 alt='location'
                             />
                         </div>
-                        <p className="text-contactSize text-sp-gray2 ">UAE, dubai {location.name}</p>
+                        <p className="text-contactSize text-sp-gray2 ">UAE, dubai </p>
                     </div>
                     <div className="flex mt-2 ">
 
