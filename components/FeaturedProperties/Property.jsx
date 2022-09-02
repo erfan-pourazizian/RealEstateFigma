@@ -11,13 +11,14 @@ const Property = ({
         title,
         baths,
         area,
+        location: {name},
         externalID,
     },
 }) => {
     return (
         <Link href={`/property/${externalID}`} passHref>
-            <div className='flex flex-wrap w-[420px] p-5 pt-0 justify-start cursor-pointer '>
-                <div className='relative'>
+            <div className='flex flex-wrap w-[33%] p-5 pt-0 justify-start cursor-pointer  '>
+                <div className='relative '>
                     <div className='absolute w-[25%] h-[13%] top-0 left-0 z-10'>
                         <Image
                             src="/Images/for-rent.png"
@@ -30,8 +31,8 @@ const Property = ({
                         width={400}
                         height={260}
                         alt="house"
+                        className="rounded-lg"
                     />
-
                 </div>
                 <div className='mt-4'>
                     <p className='text-lg text-sp-gray2 text-bold'>
@@ -47,7 +48,7 @@ const Property = ({
                                 alt='location'
                             />
                         </div>
-                        <p className="text-contactSize text-sp-gray2 ">example , example</p>
+                        <p className="text-contactSize text-sp-gray2 ">UAE, dubai {location.name}</p>
                     </div>
                     <div className="flex mt-2 ">
 
@@ -60,7 +61,10 @@ const Property = ({
                                     alt='sqft'
                                 />
                             </div>
-                            <p className="text-contactSize text-sp-gray2 ">{area} sqft</p>
+                            <p className="text-contactSize text-sp-gray2 ">
+                            {area.toString().length > 5 ? area.toString().substring(0, 5) : area}  
+                                sqft
+                                </p>
                         </div>
 
                         <div className="flex">
