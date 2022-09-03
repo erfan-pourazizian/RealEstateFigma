@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         'sp-orange': 'rgba(255, 141, 27, 1)',
+        'sp-orange2': 'rgba(251, 146, 36, 1)',
         'sp-gray' : 'rgba(231, 231, 231, 1)',
         'sp-gray2' :'rgba(79, 79, 79, 1)',
         'sp-gray3' :'rgba(238, 238, 238, 1)',
