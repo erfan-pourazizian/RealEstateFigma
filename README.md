@@ -1,4 +1,4 @@
-### [Live Site](https://real-state-figma.vercel.app/)
+### [Live Site](https://real-estate-figma.vercel.app/)
 
 ![realstate](https://user-images.githubusercontent.com/91010211/188339378-f2827872-608b-416d-acbb-d2aa84fdc9a1.png)
 
