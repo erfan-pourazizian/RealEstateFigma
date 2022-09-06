@@ -1,5 +1,5 @@
 import Head from "next/head";
-import {fetchApi, baseUrl} from '../utils/fetchApi'
+import { fetchApi, baseUrl } from "../utils/fetchApi";
 import {
   Connect,
   Main,
@@ -11,29 +11,23 @@ import {
   Navbar,
 } from "../components/index";
 
-export default function Home({propertiesForRent}) {
+export default function Home({ propertiesForRent }) {
   return (
-    <div className="">
-      <Head>
-        <title>Real State</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Navbar />
+    <>
       <Main />
       <Discover />
       <OurServices />
-      <FeaturedProperties propertiesForRent={propertiesForRent}/>
+      <FeaturedProperties propertiesForRent={propertiesForRent} />
       <PeopleSection />
       <Connect />
-      <Footer />
-    </div>
+    </>
   );
 }
 
-
-
 export async function getStaticProps() {
-  const propertyForRent = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=6`);
+  const propertyForRent = await fetchApi(
+    `${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=6`
+  );
 
   return {
     props: {
