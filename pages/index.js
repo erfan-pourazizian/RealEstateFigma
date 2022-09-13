@@ -5,11 +5,9 @@ import {
   Main,
   Discover,
   FeaturedProperties,
-  Footer,
   OurServices,
   PeopleSection,
-  Navbar,
-} from "../components/index";
+} from "../components";
 
 export default function Home({ propertiesForRent }) {
   return (
