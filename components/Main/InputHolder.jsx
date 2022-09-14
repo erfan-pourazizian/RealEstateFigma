@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const InputHolder = ({ inputName, img, alt, op1, op2 }) => {
+const InputHolder = ({ inputName, img, alt, options }) => {
   return (
     <>
       <p className="mb-1">{inputName}</p>
@@ -16,8 +16,11 @@ const InputHolder = ({ inputName, img, alt, op1, op2 }) => {
         </div>
         <select defaultValue={'DEFAULT'} className="appearance-none bg-inherit w-full">
           <option value="DEFAULT" hidden disabled  ></option>
-          <option>{op1}</option>
-          <option>{op2}</option>
+          {Object.keys(options).map((opt, index) => {
+            return (
+              <option value={options[opt].value} key={index}>{options[opt].name}</option>
+            )
+          })},
         </select>
       </div>
     </>
