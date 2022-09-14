@@ -39,7 +39,7 @@ const Footer = () => {
   return (
     <div className='bg-contain bg-bottom bg-no-repeat' style={{backgroundImage: 'url(/Images/footer.png)'}}>
 
-      <div className='relative grid grid-cols-5  mt-40 ml-40 mr-14 pb-24'>
+      <div className='relative grid grid-cols-5  ml-40 mr-14 pb-24'>
         <div className="flex flex-col col-span-2">
           <div className="relative w-[100px] h-[20px] ">
             <Image
