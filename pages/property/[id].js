@@ -11,18 +11,15 @@ const PropertyDetails = ({
     title,
     baths,
     area,
-    agency,
     isVerified,
     description,
-    type,
-    purpose,
-    furnishingStatus,
     amenities,
     photos,
+    purpose,
   },
 }) => {
   return (
-    <div className="p-4 m-auto">
+    <div className="m-14 ">
       <SwiperHandler photos={photos} />
       <div className="w-full p-6">
         <div className="flex  pt-2 items-center">
@@ -32,7 +29,7 @@ const PropertyDetails = ({
             )}
           </div>
           <p className="font-bold text-lg">
-            AED {price} {rentFrequency && `/${rentFrequency}`}
+            {price} {rentFrequency && `/ ${rentFrequency}`}
           </p>
         </div>
         <div className="flex mt-2 ">
@@ -60,6 +57,31 @@ const PropertyDetails = ({
               <Image src="/Images/bath.png" width={20} height={20} alt="bath" />
             </div>
             <p className="text-contactSize text-sp-gray2 ">{baths} </p>
+          </div>
+          <p className=" font-bold ml-4 text-sp-orange2 bg-gray-200 rounded px-4 ">{purpose}</p>
+        </div>
+        <div>
+          <p className="font-semibold mb-2 mt-7 text-lg">{title}</p>
+          <p
+            className="text-sp-gray2 mt-4"
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
+        </div>
+        <div>
+          {amenities.length && (
+            <p className="text-2xl font-black mt-8">Facilites:</p>
+          )}
+          <div className="flex flex-wrap mt-4">
+            {amenities?.map((item) =>
+              item?.amenities?.map((amenity) => (
+                <p
+                  className="font-bold text-sp-orange2 text-lg p-2 bg-gray-200 m-1 rounded"
+                  key={amenity.text}
+                >
+                  {amenity.text}
+                </p>
+              ))
+            )}
           </div>
         </div>
       </div>
