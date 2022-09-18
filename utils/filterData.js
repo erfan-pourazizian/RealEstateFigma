@@ -1,12 +1,5 @@
 export const filterData = [
-    {
-      items: [
-        { name: 'Buy', value: 'for-sale' },
-        { name: 'Rent', value: 'for-rent' },
-      ],
-      placeholder: 'Purpose',
-      queryName: 'purpose',
-    },
+
     {
       items: [
         { name: 'Daily', value: 'daily' },
@@ -56,8 +49,6 @@ export const filterData = [
       items: [
         { name: 'Lowest Price', value: 'price-asc' },
         { name: 'Highest Price', value: 'price-des' },
-        { name: 'Newest', value: 'date-asc' },
-        { name: 'Oldest', value: 'date-desc' },
         { name: 'Verified', value: 'verified-score' },
         { name: 'City Level Score', value: 'city-level-score' },
       ],
@@ -136,7 +127,6 @@ export const filterData = [
   
   export const getFilterValues = (filterValues) => {
     const {
-      purpose,
       rentFrequency,
       categoryExternalID,
       minPrice,
@@ -149,10 +139,6 @@ export const filterData = [
     } = filterValues;
   
     const values = [
-      {
-        name: 'purpose',
-        value: purpose,
-      },
       {
         name: 'rentFrequency',
         value: rentFrequency,

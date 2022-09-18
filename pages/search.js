@@ -7,7 +7,6 @@ import SearchFilters from "../components/SearchFilters";
 
 const Search = ({properties}) => {
     const [searchFilters, setSearchFilters] = useState(false);
-    const router = useRouter();
     return (
         <div>
             <div className="flex bg-sp-orange border-b-2  p-2 font-black text-lg justify-center items-center"
