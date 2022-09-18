@@ -12,10 +12,12 @@ const InputForm = () => {
                     {options.map((opt, index) => {
                         const isFirst = index === 0;
                         const isThird = index === 2;
+                        const isLast = index === 5
                         const classNames = [
                             isFirst && "col-span-7",
                             !isFirst && "col-span-2",
-                            isThird && "col-start-1 col-end-4"
+                            isThird && "col-start-1 col-end-4",
+                            isLast && "ml-2",
                         ].join(" ");
                         return (
                             <div className={classNames} key={opt.inputName}>
