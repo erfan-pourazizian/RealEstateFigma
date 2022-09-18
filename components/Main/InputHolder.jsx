@@ -5,7 +5,7 @@ const InputHolder = ({ inputName, img, alt, options }) => {
   return (
     <>
       <p className="mb-1">{inputName}</p>
-      <div className='flex items-center bg-sp-gray  h-[35px]'>
+      <div className='flex items-center bg-sp-gray  h-[35px] '>
         <div className="ml-3 justify-self-center">
           <Image
             src={img}
@@ -15,7 +15,7 @@ const InputHolder = ({ inputName, img, alt, options }) => {
           />
         </div>
         <select defaultValue={'DEFAULT'} className="appearance-none bg-inherit w-full">
-          <option value="DEFAULT" hidden disabled  ></option>
+          <option value="DEFAULT" hidden disabled  />
           {Object.keys(options).map((opt, index) => {
             return (
               <option value={options[opt].value} key={index}>{options[opt].name}</option>
