@@ -3,6 +3,7 @@ export const options = [
         inputName: 'Address *',
         img: '/Images/location.png',
         alt: 'Address',
+        queryName: 'sort',
         opt: [
             {name: "Lowest Price", value: "price-asc"},
             {name: "Highest Price", value: "price-des"},
@@ -16,6 +17,7 @@ export const options = [
         inputName: 'Unit',
         img: '/Images/empty.png',
         alt: 'Unit',
+        queryName: 'roomsMin',
         opt: [
             {name: "1", value: "1"},
             {name: "2", value: "2"},
@@ -33,6 +35,7 @@ export const options = [
         inputName: 'Property Type ',
         img: '/Images/property.png',
         alt: 'Property Type ',
+        queryName: 'categoryExternalID',
         opt: [
             { name: "Apartment", value: "4" },
             { name: "Townhouses", value: "16" },
@@ -49,6 +52,7 @@ export const options = [
         inputName: 'SQFT',
         img: '/Images/sqft.png',
         alt: 'SQFT',
+        queryName: 'areaMax',
         opt: [
             { name: "1000", value: "1000" },
             { name: "2000", value: "2000" },
@@ -63,6 +67,7 @@ export const options = [
         inputName: 'Beds',
         img: '/Images/beds.png',
         alt: 'Beds',
+        queryName: 'roomsMin',
         opt: [
             { name: "1", value: "1" },
             { name: "2", value: "2" },
@@ -80,6 +85,7 @@ export const options = [
         inputName: 'Bath',
         img: '/Images/bath.png',
         alt: 'Bath',
+        queryName: 'bathsMin',
         opt: [
             { name: "1", value: "1" },
             { name: "2", value: "2" },

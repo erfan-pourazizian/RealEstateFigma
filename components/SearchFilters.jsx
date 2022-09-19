@@ -6,6 +6,7 @@ const SearchFilters = () => {
     const [filters, setFilters] = useState(filterData)
 
     const searchProperties = (filterValues) => {
+
         const path = router.pathname;
         const {query} = router;
 
