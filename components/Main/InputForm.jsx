@@ -1,4 +1,4 @@
- import InputHolder from './InputHolder'
+import InputHolder from './InputHolder'
 import {options} from '../../utils/options'
 
 const InputForm = () => {
@@ -9,18 +9,11 @@ const InputForm = () => {
             <div className="flex mb-5">
 
                 <div className="grid grid-cols-11 grid-row-2 gap-6 mt-2 ml-10 w-[90%]  ">
-                    {options.map((opt, index) => {
-                        const isFirst = index === 0;
-                        const isThird = index === 2;
-                        const isLast = index === 5
-                        const classNames = [
-                            isFirst && "col-span-7",
-                            !isFirst && "col-span-2",
-                            isThird && "col-start-1 col-end-4",
-                            isLast && "ml-2",
-                        ].join(" ");
+                    {options.map(opt => {
                         return (
-                            <div className={classNames} key={opt.inputName}>
+                            <div
+                                className="col-span-2 [&:nth-child(1)]:col-span-7 [&:nth-child(6)]:ml-2 [&:nth-child(3)]:col-start-1 [&:nth-child(3)]:col-end-4"
+                                key={opt.inputName}>
                                 <InputHolder inputName={opt.inputName} img={opt.img} alt={opt.alt} options={opt.opt}/>
                             </div>
                         )
