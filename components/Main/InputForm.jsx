@@ -23,7 +23,8 @@ const InputForm = () => {
                     })}
                     <button
                         className=" self-end col-span-2  bg-sp-orange px-7 py-1 h-[35px] rounded-sm text-white ml-2"
-                        onClick={}>Submit
+                        // onClick={}
+                    >Submit
                     </button>
                 </div>
             </div>
