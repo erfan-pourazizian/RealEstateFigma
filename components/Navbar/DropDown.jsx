@@ -9,7 +9,7 @@ function classNames(...classes) {
 
 const DropDown = ({ name, op1, op2, op3 }) => {
     return (
-        <Menu as="div" className="relative inline-block text-left mr-8">
+        <Menu as="div" className="relative inline-block text-left mr-7">
             <div>
                 <Menu.Button className="inline-flex justify-center w-full   px-4 py-2  text-xl font-medium " >
                     {name}
