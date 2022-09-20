@@ -71,7 +71,7 @@ const PropertyDetails = ({
           {amenities.length && (
             <p className="text-2xl font-black mt-8">Facilites:</p>
           )}
-          <div className="flex flex-wrap mt-4">
+          <div className="flex flex-wrap mt-4 mb-28">
             {amenities?.map((item) =>
               item?.amenities?.map((amenity) => (
                 <p
