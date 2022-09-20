@@ -1,11 +1,10 @@
 import Image from 'next/image'
 import {getFilterValues} from "../../utils/filterData";
 import router from "next/router";
-import {useState} from "react";
-
+import {submitHandler} from "./InputForm";
+import inputHolder from "./InputHolder";
 
 const InputHolder = ({inputName, img, alt, options, filter}) => {
-    const [searchPath, setSearchPath] = useState()
 
     const searchProperties = (filterValues) => {
         const {query} = router;
@@ -16,9 +15,12 @@ const InputHolder = ({inputName, img, alt, options, filter}) => {
                 query[item.name] = item.value
             }
         })
-        return {pathname: '/search', query}
+
+        router.push({pathname: '/search', query})
+
     }
-    setSearchPath(searchProperties)
+
+
 
     return (
         <>
