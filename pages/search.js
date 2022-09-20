@@ -1,5 +1,4 @@
 import {useState} from "react";
-import {useRouter} from "next/router";
 import Image from "next/image";
 import {fetchApi, baseUrl} from "../utils/fetchApi";
 import Property from "../components/FeaturedProperties/Property";
@@ -21,8 +20,10 @@ const Search = ({properties}) => {
             </div>
             {properties.length === 0 && (
                 <div className="flex justify-center items-center flex-col my-5">
-                    <Image alt="no result" src={noresult}/>
-                    <p className="text-2xl mt-3"> No Result Found</p>
+                    <p className="text-3xl mt-3 mb-5 text-sp-orange2 font-semibold"> No Result Found</p>
+                    <div className="relative w-1/2 h-80 mb-20">
+                        <Image alt="no result" src={"/images/no-results.png"} layout="fill"/>
+                    </div>
                 </div>
             )}
         </div>
