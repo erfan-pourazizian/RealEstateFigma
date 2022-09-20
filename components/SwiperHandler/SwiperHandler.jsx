@@ -22,7 +22,7 @@ const SwiperHandler = ({photos}) => {
                 }}
                 navigation={true}
                 modules={[EffectFade, Autoplay, Pagination, Navigation]}
-                className="mySwiper rounded-[3.5rem]"
+                className="mySwiper rounded-[2rem]"
             >
                 {photos.map((photo, index) => {
                     return (

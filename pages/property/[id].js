@@ -20,6 +20,7 @@ const PropertyDetails = ({
 }) => {
   return (
     <div className="m-14 ">
+      <p className="font-semibold mb-5  text-3xl text-sp-orange2">{title}</p>
       <SwiperHandler photos={photos} />
       <div className="w-full p-6">
         <div className="flex  pt-2 items-center">
@@ -28,7 +29,7 @@ const PropertyDetails = ({
               <Image src={verify} alt="verified" width={24} height={24} />
             )}
           </div>
-          <p className="font-bold text-lg">
+          <p className="font-bold text-lg mb-2">
             {price} {rentFrequency && `/ ${rentFrequency}`}
           </p>
         </div>
@@ -61,7 +62,6 @@ const PropertyDetails = ({
           <p className=" font-bold ml-4 text-sp-orange2 bg-gray-200 rounded px-4 ">{purpose}</p>
         </div>
         <div>
-          <p className="font-semibold mb-2 mt-7 text-lg">{title}</p>
           <p
             className="text-sp-gray2 mt-4"
             dangerouslySetInnerHTML={{ __html: description }}
