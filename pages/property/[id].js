@@ -2,6 +2,7 @@ import verify from "../../public/Images/verify.png";
 import { baseUrl, fetchApi } from "../../utils/fetchApi";
 import Image from "next/image";
 import SwiperHandler from "../../components/SwiperHandler/SwiperHandler";
+import {NextSeo} from "next-seo";
 
 const PropertyDetails = ({
   propertyDetails: {
@@ -20,6 +21,10 @@ const PropertyDetails = ({
 }) => {
   return (
     <div className="m-14 ">
+      <NextSeo
+          title={title}
+          description="you can watch more information here."
+      />
       <p className="font-semibold mb-5  text-3xl text-sp-orange2">{title}</p>
       <SwiperHandler photos={photos} />
       <div className="w-full p-6">

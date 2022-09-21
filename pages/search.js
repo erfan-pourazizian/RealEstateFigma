@@ -3,11 +3,16 @@ import Image from "next/image";
 import {fetchApi, baseUrl} from "../utils/fetchApi";
 import Property from "../components/FeaturedProperties/Property";
 import SearchFilters from "../components/SearchFilters";
+import { NextSeo } from 'next-seo';
 
 const Search = ({properties}) => {
     const [searchFilters, setSearchFilters] = useState(false);
     return (
-        <div>
+        <>
+            <NextSeo
+                title="Search Page | Real estate"
+                description="you can filter properties here."
+            />
             <div className="flex bg-sp-orange border-b-2  p-2 font-black text-lg justify-center items-center"
                  onClick={() => setSearchFilters((prevFilters) => !prevFilters)}>
                 <p>Search Property By Filters</p>
@@ -26,7 +31,7 @@ const Search = ({properties}) => {
                     </div>
                 </div>
             )}
-        </div>
+        </>
     )
 }
 
