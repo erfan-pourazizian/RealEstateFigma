@@ -1,4 +1,3 @@
-import React from 'react'
 import LinkColumn from './LinkColumn'
 import Image from 'next/image'
 

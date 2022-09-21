@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Connect = () => {
   return (
     <div className='flex bg-sp-orange2 mt-40 mb-40 mx-16 px-24 py-10 rounded-[10px] items-center'>

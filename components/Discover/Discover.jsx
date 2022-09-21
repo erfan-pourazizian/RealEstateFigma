@@ -1,4 +1,3 @@
-import React from 'react'
 import ImageHolder from "./ImageHolder";
 
 const options = [

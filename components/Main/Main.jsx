@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import InputForm from './InputForm'
 import Image from 'next/image'
 
