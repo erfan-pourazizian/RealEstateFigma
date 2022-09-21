@@ -3,19 +3,19 @@ import Image from 'next/image'
 import DefaultImage from "../../public/Images/default-house.png"
 
 const Property = ({
-    property: {
-        coverPhoto,
-        price,
-        rooms,
-        title,
-        baths,
-        area,
-        externalID,
-    },
-}) => {
+                      property: {
+                          coverPhoto,
+                          price,
+                          rooms,
+                          title,
+                          baths,
+                          area,
+                          externalID,
+                      },
+                  }) => {
     return (
         <Link href={`/property/${externalID}`} passHref>
-            <div className='flex flex-wrap w-[33%] p-5 pt-0 justify-start cursor-pointer  '>
+            <div className='flex flex-wrap w-1/3  pt-0 justify-start cursor-pointer items-center px-3'>
                 <div className='relative '>
                     <div className='absolute w-[25%] h-[13%] top-0 left-0 z-10'>
                         <Image
@@ -24,15 +24,16 @@ const Property = ({
                             alt='for-rent'
                         />
                     </div>
-                    <Image
-                        src={coverPhoto ? coverPhoto.url : DefaultImage}
-                        width={400}
-                        height={260}
-                        alt="house"
-                        className="rounded-lg"
-                    />
+                    <div className="relative  w-[400px] h-[260px]">
+                        <Image
+                            src={coverPhoto ? coverPhoto.url : DefaultImage}
+                            layout="fill"
+                            alt="house"
+                            className="rounded-lg"
+                        />
+                    </div>
                 </div>
-                <div className='mt-4'>
+                <div className='mt-4 '>
                     <p className='text-lg text-sp-gray2 text-bold'>
                         {title.length > 30 ? `${title.substring(0, 30)}...` : title}
                     </p>
@@ -60,9 +61,9 @@ const Property = ({
                                 />
                             </div>
                             <p className="text-contactSize text-sp-gray2 ">
-                            {area.toString().length > 5 ? area.toString().substring(0, 5) : area}  
+                                {area.toString().length > 5 ? area.toString().substring(0, 5) : area}
                                 sqft
-                                </p>
+                            </p>
                         </div>
 
                         <div className="flex">
@@ -89,7 +90,7 @@ const Property = ({
                             <p className="text-contactSize text-sp-gray2 ">{baths} </p>
                         </div>
                     </div>
-                    <h3 className="text-3xl font-bold text-sp-orange mt-3">$ {price}</h3>
+                    <h3 className="text-3xl font-bold text-sp-orange mt-3 mb-5">$ {price}</h3>
                 </div>
             </div>
         </Link>
