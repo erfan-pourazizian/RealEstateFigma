@@ -20,3 +20,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#nprogress .bar {
+  background: rgba(251, 146, 36, 1);
+}
