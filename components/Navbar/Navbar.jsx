@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import DropDown from "./DropDown";
+import { dropDownOptions } from '../../utils/dropDownOptions';
 
 const Navbar = () => {
     return (
@@ -14,8 +15,11 @@ const Navbar = () => {
                 />
             </div>
             <div className='flex ml-auto mr-10'>
-                <DropDown name={"I'm a LandLord"} op1={"op1"} op2={"op2"} op3={"op3"}/>
-                <DropDown name={"I'm a Tenant"} op1={"op1"} op2={"op2"} op3={"op3"}/>
+                {dropDownOptions.map((dropDown) => {
+                    return (
+                        <DropDown dropDownDetails={dropDown} key={dropDown.name} />
+                    )
+                })}
                 <p className='inline-flex justify-center  self-center text-spSize2 font-medium mr-8'>Search Rentals</p>
                 <div className=" border flex border-sp-orange rounded px-7  ">
                     <p className='text-sp-orange self-center  text-contactSize '>Contact Us</p>

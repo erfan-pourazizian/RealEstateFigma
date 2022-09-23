@@ -1,7 +1,16 @@
 import { useState } from 'react'
 
 
-const DropDown = ({ name, op1, op2, op3 }) => {
+const DropDown = ({
+    dropDownDetails: {
+        name,
+        option_1,
+        link_1,
+        option_2,
+        link_2,
+        option_3,
+        link_3
+    } }) => {
     const [dropDown, setDropDown] = useState(false)
     const [arrow, setArrow] = useState(false)
     const handleDropDown = () => {
@@ -30,11 +39,11 @@ const DropDown = ({ name, op1, op2, op3 }) => {
                 </button>
                 {dropDown &&
                     <div id="options" className="absolute w-48  mt-2 bg-gray-100 rounded-lg shadow-xl">
-                        <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 hover:text-white rounded">{op1}
+                        <a href={link_1} className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 hover:text-white rounded">{option_1}
                         </a>
-                        <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 hover:text-white rounded">{op2}
+                        <a href={link_2} className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 hover:text-white rounded">{option_2}
                         </a>
-                        <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 hover:text-white rounded">{op3}
+                        <a href={link_3} className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 hover:text-white rounded">{option_3}
                         </a>
                     </div>
                 }
