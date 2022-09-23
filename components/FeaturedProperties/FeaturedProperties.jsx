@@ -2,7 +2,7 @@ import Property from './Property'
 
 const FeaturedProperties = ({ propertiesForRent }) => {
   return (
-    <div className='mt-36 mx-10'>
+    <div className='mt-36 mx-10' id='featuredProperties'>
       <h1 className='text-spSize1 text-sp-gray2 text-center font-semibold'>Featured Properties</h1>
       <div className='mt-14 flex flex-wrap ml-4'>
         {propertiesForRent?.map((property) => <Property property={property} key={property.id} />)}

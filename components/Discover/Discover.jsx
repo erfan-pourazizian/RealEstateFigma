@@ -15,7 +15,7 @@ const Discover = () => {
 
 
     return (
-        <div className='mt-44 flex'>
+        <div className='mt-44 flex' id="discover">
             <div className='flex flex-col mt-8 ml-20 mr-16'>
                 <h1 className='text-spSize1 text-sp-gray2 font-bold'>Discover Your Perfect<br/> Home Today</h1>
                 <p className=" my-5 text-xl text-discover-color">Welcome to your source for leasing and

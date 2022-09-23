@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const PeopleSection = () => {
   return (
-    <div className='relative mt-36 mx-10'>
+    <div className='relative mt-36 mx-10' id='peopleSection'>
 
       <div className="absolute left-10 w-[160px] h-[130px]">
         <Image
