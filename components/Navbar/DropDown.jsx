@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import Link from 'next/link'
 
 const DropDown = ({
     dropDownDetails: {
@@ -20,7 +20,7 @@ const DropDown = ({
     return (
         <div className="flex flex-row justify-center  mr-7">
             <div className="flex-none ">
-                <button onMouseEnter={handleDropDown} className="flex flex-row justify-between w-full px-4 py-2  text-spSize2 font-medium">
+                <button onClick={handleDropDown} className="flex flex-row justify-between w-full px-4 py-2  text-spSize2 font-medium">
                     <span className="select-none">{name}</span>
                     {arrow ?
                         <div className="flex items-center  ml-3  -scale-100">
@@ -39,12 +39,21 @@ const DropDown = ({
                 </button>
                 {dropDown &&
                     <div id="options" className="absolute w-48  mt-2 bg-gray-100 rounded-lg shadow-xl">
-                        <a href={link_1} className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 hover:text-white rounded">{option_1}
-                        </a>
-                        <a href={link_2} className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 hover:text-white rounded">{option_2}
-                        </a>
-                        <a href={link_3} className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 hover:text-white rounded">{option_3}
-                        </a>
+                        <Link href={link_1}>
+                            <a className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 hover:text-white rounded">
+                                {option_1}
+                            </a>
+                        </Link>
+                        <Link href={link_2}>
+                            <a className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 hover:text-white rounded">
+                                {option_2}
+                            </a>
+                        </Link>
+                        <Link href={link_3}>
+                            <a className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 hover:text-white rounded">
+                                {option_3}
+                            </a>
+                        </Link>
                     </div>
                 }
             </div>
