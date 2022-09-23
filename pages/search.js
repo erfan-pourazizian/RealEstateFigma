@@ -6,7 +6,7 @@ import { NextSeo } from 'next-seo';
 
 const Search = ({properties}) => {
     return (
-        <div className="mx-32">
+        <div className="mx-32 mt-28">
             <NextSeo
                 title="Search Page | Real estate"
                 description="you can filter properties here."

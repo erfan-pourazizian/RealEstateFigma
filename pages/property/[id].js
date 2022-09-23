@@ -1,4 +1,3 @@
-import verify from "../../public/Images/verify.webp";
 import { baseUrl, fetchApi } from "../../utils/fetchApi";
 import Image from "next/image";
 import SwiperHandler from "../../components/SwiperHandler/SwiperHandler";
@@ -20,7 +19,7 @@ const PropertyDetails = ({
   },
 }) => {
   return (
-    <div className="m-14 ">
+    <div className="m-14 mt-28 ">
       <NextSeo
           title={title}
           description="you can watch more information here."
@@ -31,7 +30,7 @@ const PropertyDetails = ({
         <div className="flex  pt-2 items-center">
           <div className="pr-3 ">
             {isVerified && (
-              <Image src={verify} alt="verified" width={24} height={24} />
+              <Image src="/Images/verify.webp" alt="verified" width={24} height={24} />
             )}
           </div>
           <p className="font-bold text-lg mb-2">

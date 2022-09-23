@@ -1,6 +1,6 @@
 import Link from "next/dist/client/link";
 import Image from 'next/image'
-import DefaultImage from "../../public/Images/default-house.webp"
+
 
 const Property = ({
                       property: {
@@ -26,7 +26,7 @@ const Property = ({
                     </div>
                     <div className="relative  w-[400px] h-[260px]">
                         <Image
-                            src={coverPhoto ? coverPhoto.url : DefaultImage}
+                            src={coverPhoto ? coverPhoto.url : '/Images/default-house.webp'}
                             layout="fill"
                             alt="house"
                             className="rounded-lg"
