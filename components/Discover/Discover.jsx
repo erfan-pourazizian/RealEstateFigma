@@ -1,16 +1,6 @@
 import ImageHolder from "./ImageHolder";
+import { discoverOptions } from "../../utils/discoverOptions";
 
-const options = [
-    {src: "/Images/nature-1.webp"},
-    {
-        src: "/Images/nature-2.webp",
-        firstText: 'Malang, Jawa timur',
-        secondText: '6 Property listed',
-
-    },
-    {src: "/Images/nature-3.webp"},
-    {src: "/Images/nature-4.webp"},
-]
 const Discover = () => {
 
 
@@ -27,10 +17,10 @@ const Discover = () => {
 
 
             <div className='gap-8 w-[60%] grid grid-flow-col auto-cols-max'>
-                {options.map((opt) => {
+                {discoverOptions.map((option) => {
                     return (
-                        <div className="relative w-[255px] h-[350px] [&:nth-child(2)]:flex [&:nth-child(2)]:flex-col [&:nth-child(2)]:bottom-12 last:w-[69px]" key={opt.src}>
-                            <ImageHolder src={opt.src} firstText={opt.firstText} secondText={opt.secondText}/>
+                        <div className="relative w-[255px] h-[350px] [&:nth-child(2)]:flex [&:nth-child(2)]:flex-col [&:nth-child(2)]:bottom-12 last:w-[69px]" key={option.src}>
+                            <ImageHolder src={option.src} firstText={option.firstText} secondText={option.secondText}/>
                         </div>
                     )
                 })}
