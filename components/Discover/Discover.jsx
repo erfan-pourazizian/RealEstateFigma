@@ -18,7 +18,7 @@ const Discover = () => {
         <div className='mt-44 flex' id="discover">
             <div className='flex flex-col mt-8 ml-20 mr-16'>
                 <h1 className='text-spSize1 text-sp-gray2 font-bold'>Discover Your Perfect<br/> Home Today</h1>
-                <p className=" my-5 text-xl text-discover-color">Welcome to your source for leasing and
+                <p className=" my-5 text-spSize2 text-discover-color">Welcome to your source for leasing and
                     managing <br/> beautiful rental homes Indonesia</p>
                 <button className="font-semibold bg-sp-orange px-7 py-1 h-[45px] rounded-sm text-white mr-auto">Discover
                     Now

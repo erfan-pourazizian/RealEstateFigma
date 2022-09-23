@@ -23,6 +23,9 @@ module.exports = {
                 spSize1: ['40px', {
                     lineHeight: '51px',
                 }],
+                spSize2: ['20px', {
+                    lineHeight: '25px',
+                }],
                 MainH1Size: ['50px', {
                     lineHeight: '64px',
                 }],

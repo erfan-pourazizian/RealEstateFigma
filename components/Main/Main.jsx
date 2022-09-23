@@ -9,7 +9,7 @@ const Main = () => {
 
         <div className="mt-44  relative">
           <h1 className='text-MainH1Size text-sp-gray2 font-semibold' >Need to Rent a House?</h1>
-          <p className='mb-7 mt-2 text-xl text-sp-gray2'>We&#39;ll help you find your next home.</p>
+          <p className='mb-7 mt-2 text-spSize2 text-sp-gray2'>We&#39;ll help you find your next home.</p>
         </div>
         <InputForm />
       </div>
