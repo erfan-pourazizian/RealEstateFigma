@@ -21,7 +21,7 @@ const Search = ({properties}) => {
                 <div className="flex justify-center items-center flex-col my-5">
                     <p className="text-3xl mt-3 mb-5 text-sp-orange2 font-semibold"> No Result Found</p>
                     <div className="relative w-1/2 h-80 mb-20">
-                        <Image alt="no result" src={"/images/no-results.png"} layout="fill"/>
+                        <Image alt="no result" src={"/images/no-results.webp"} layout="fill"/>
                     </div>
                 </div>
             )}

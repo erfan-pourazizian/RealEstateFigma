@@ -6,7 +6,7 @@ const PeopleSection = () => {
 
       <div className="absolute left-10 w-[160px] h-[130px]">
         <Image
-          src="/Images/comma.png"
+          src="/Images/comma.webp"
           alt="comma"
           layout='fill'
         />
@@ -15,7 +15,7 @@ const PeopleSection = () => {
       <div className="grid grid-cols-2  place-items-center mt-14 mx-20 ">
         <div className="relative w-full  h-[360px]">
           <Image
-            src="/Images/woman.png"
+            src="/Images/woman.webp"
             alt="woman"
             layout='fill'
           />

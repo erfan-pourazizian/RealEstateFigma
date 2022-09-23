@@ -16,7 +16,7 @@ const DropDown = ({ name, op1, op2, op3 }) => {
                     <div className="-mr-1 ml-2 h-5 w-5 " >
                         <Image
                             alt="down arrow"
-                            src="/Images/arrow.png"
+                            src="/Images/arrow.webp"
                             width={12}
                             height={7}
                         />

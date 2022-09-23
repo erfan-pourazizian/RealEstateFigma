@@ -1,7 +1,7 @@
 export const options = [
     {
         inputName: 'Address *',
-        img: '/Images/location.png',
+        img: '/Images/location.webp',
         alt: 'Address',
         queryName: 'sort',
         opt: [
@@ -15,7 +15,7 @@ export const options = [
     },
     {
         inputName: 'Unit',
-        img: '/Images/empty.png',
+        img: '/Images/empty.webp',
         alt: 'Unit',
         queryName: 'roomsMin',
         opt: [
@@ -33,7 +33,7 @@ export const options = [
     },
     {
         inputName: 'Property Type ',
-        img: '/Images/property.png',
+        img: '/Images/property.webp',
         alt: 'Property Type ',
         queryName: 'categoryExternalID',
         opt: [
@@ -50,7 +50,7 @@ export const options = [
     },
     {
         inputName: 'SQFT',
-        img: '/Images/sqft.png',
+        img: '/Images/sqft.webp',
         alt: 'SQFT',
         queryName: 'areaMax',
         opt: [
@@ -65,7 +65,7 @@ export const options = [
     },
     {
         inputName: 'Beds',
-        img: '/Images/beds.png',
+        img: '/Images/beds.webp',
         alt: 'Beds',
         queryName: 'roomsMin',
         opt: [
@@ -83,7 +83,7 @@ export const options = [
     },
     {
         inputName: 'Bath',
-        img: '/Images/bath.png',
+        img: '/Images/bath.webp',
         alt: 'Bath',
         queryName: 'bathsMin',
         opt: [

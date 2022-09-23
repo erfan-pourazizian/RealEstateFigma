@@ -1,6 +1,6 @@
 import Link from "next/dist/client/link";
 import Image from 'next/image'
-import DefaultImage from "../../public/Images/default-house.png"
+import DefaultImage from "../../public/Images/default-house.webp"
 
 const Property = ({
                       property: {
@@ -19,7 +19,7 @@ const Property = ({
                 <div className='relative '>
                     <div className='absolute w-[25%] h-[13%] top-0 left-0 z-10'>
                         <Image
-                            src="/Images/for-rent.png"
+                            src="/Images/for-rent.webp"
                             layout='fill'
                             alt='for-rent'
                         />
@@ -41,7 +41,7 @@ const Property = ({
 
                         <div className="mr-3 flex self-end">
                             <Image
-                                src="/Images/location.png"
+                                src="/Images/location.webp"
                                 width={20}
                                 height={20}
                                 alt='location'
@@ -54,7 +54,7 @@ const Property = ({
                         <div className="flex">
                             <div className="mr-3 flex self-end ">
                                 <Image
-                                    src="/Images/sqft.png"
+                                    src="/Images/sqft.webp"
                                     width={20}
                                     height={20}
                                     alt='sqft'
@@ -69,7 +69,7 @@ const Property = ({
                         <div className="flex">
                             <div className="mr-3 ml-4 flex self-end ">
                                 <Image
-                                    src="/Images/beds.png"
+                                    src="/Images/beds.webp"
                                     width={20}
                                     height={20}
                                     alt='beds'
@@ -81,7 +81,7 @@ const Property = ({
                         <div className="flex">
                             <div className="mr-3 ml-7 flex self-end ">
                                 <Image
-                                    src="/Images/bath.png"
+                                    src="/Images/bath.webp"
                                     width={20}
                                     height={20}
                                     alt='bath'

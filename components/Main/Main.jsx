@@ -17,14 +17,14 @@ const Main = () => {
 
         <div className="relative w-[690px] h-[680px] ml-5 z-0">
           <Image
-            src={"/Images/house.png"}
+            src={"/Images/house.webp"}
             alt="house"
             layout='fill'
           />
         </div>
         <div className="relative  place-self-end w-[50px] h-[680px]">
           <Image
-            src={"/Images/half-house.png"}
+            src={"/Images/half-house.webp"}
             alt="house"
             layout='fill'
           />

@@ -36,13 +36,13 @@ const Footer = () => {
   }
 
   return (
-    <div className='bg-contain bg-bottom bg-no-repeat' style={{backgroundImage: 'url(/Images/footer.png)'}}>
+    <div className='bg-contain bg-bottom bg-no-repeat' style={{backgroundImage: 'url(/Images/footer.webp)'}}>
 
       <div className='relative grid grid-cols-5  ml-40 mr-14 pb-24'>
         <div className="flex flex-col col-span-2">
           <div className="relative w-[100px] h-[20px] ">
             <Image
-              src="/Images/rent-logo.png"
+              src="/Images/rent-logo.webp"
               layout='fill'
               objectFit='cover'
               alt="logo"
@@ -55,7 +55,7 @@ const Footer = () => {
             <a href="#">
               <div className="relative w-7 h-7">
                 <Image
-                  src="/Images/facebook.png"
+                  src="/Images/facebook.webp"
                   alt="Facebook"
                   layout="fill"
                 />
@@ -65,7 +65,7 @@ const Footer = () => {
             <a href="#">
               <div className="relative w-7 h-7 ">
                 <Image
-                  src="/Images/instagram.png"
+                  src="/Images/instagram.webp"
                   alt="instagram"
                   layout="fill"
                 />
@@ -75,7 +75,7 @@ const Footer = () => {
             <a href="#">
               <div className="relative w-7 h-7">
                 <Image
-                  src="/Images/twitter.png"
+                  src="/Images/twitter.webp"
                   alt="twitter"
                   layout="fill"
                 />

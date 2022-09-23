@@ -1,4 +1,4 @@
-import verify from "../../public/Images/verify.png";
+import verify from "../../public/Images/verify.webp";
 import { baseUrl, fetchApi } from "../../utils/fetchApi";
 import Image from "next/image";
 import SwiperHandler from "../../components/SwiperHandler/SwiperHandler";
@@ -41,7 +41,7 @@ const PropertyDetails = ({
         <div className="flex mt-2 ">
           <div className="flex">
             <div className="mr-3 flex self-end ">
-              <Image src="/Images/sqft.png" width={20} height={20} alt="sqft" />
+              <Image src="/Images/sqft.webp" width={20} height={20} alt="sqft" />
             </div>
             <p className="text-contactSize text-sp-gray2 ">
               {area.toString().length > 5
@@ -53,14 +53,14 @@ const PropertyDetails = ({
 
           <div className="flex">
             <div className="mr-3 ml-4 flex self-end ">
-              <Image src="/Images/beds.png" width={20} height={20} alt="beds" />
+              <Image src="/Images/beds.webp" width={20} height={20} alt="beds" />
             </div>
             <p className="text-contactSize text-sp-gray2 ">{rooms} </p>
           </div>
 
           <div className="flex">
             <div className="mr-3 ml-7 flex self-end ">
-              <Image src="/Images/bath.png" width={20} height={20} alt="bath" />
+              <Image src="/Images/bath.webp" width={20} height={20} alt="bath" />
             </div>
             <p className="text-contactSize text-sp-gray2 ">{baths} </p>
           </div>

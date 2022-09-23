@@ -1,15 +1,15 @@
 import ImageHolder from "./ImageHolder";
 
 const options = [
-    {src: "/Images/nature-1.png"},
+    {src: "/Images/nature-1.webp"},
     {
-        src: "/Images/nature-2.png",
+        src: "/Images/nature-2.webp",
         firstText: 'Malang, Jawa timur',
         secondText: '6 Property listed',
 
     },
-    {src: "/Images/nature-3.png"},
-    {src: "/Images/nature-4.png"},
+    {src: "/Images/nature-3.webp"},
+    {src: "/Images/nature-4.webp"},
 ]
 const Discover = () => {
 

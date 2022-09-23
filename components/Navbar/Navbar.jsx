@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className='container flex  px-7 py-6 shadow-sp-navbar '>
             <div className='flex justify-start ml-28'>
                 <Image
-                    src="/Images/rent-logo.png"
+                    src="/Images/rent-logo.webp"
                     width={100}
                     height={15}
                     objectFit='contain'
