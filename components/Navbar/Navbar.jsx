@@ -3,7 +3,7 @@ import DropDown from "./DropDown";
 
 const Navbar = () => {
     return (
-        <div className='container flex  px-7 py-6 shadow-sp-navbar '>
+        <div className='container flex  px-7 py-6 shadow-sp-navbar fixed top-0 overflow-hidden z-20 bg-white'>
             <div className='flex justify-start ml-28'>
                 <Image
                     src="/Images/rent-logo.webp"

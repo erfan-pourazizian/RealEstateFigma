@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Main = () => {
   return (
-    <div className="flex">
+    <div className="flex mt-[92px]">
       <div className='flex ml-36 flex-col '>
 
         <div className="mt-44  relative">
