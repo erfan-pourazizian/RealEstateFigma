@@ -1,7 +1,7 @@
 import LinkColumn from './LinkColumn'
 import Image from 'next/image'
 import { footerOptions, socialMediaOptions } from '../../utils/footerOptions'
-import SocialMedia from './socialMedia'
+import SocialMedia from './SocialMedia'
 
 const Footer = () => {
 
