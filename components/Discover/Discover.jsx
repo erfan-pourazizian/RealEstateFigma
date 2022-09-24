@@ -1,5 +1,6 @@
 import ImageHolder from "./ImageHolder";
 import { discoverOptions } from "../../utils/discoverOptions";
+import Link from "next/link";
 
 const Discover = () => {
 
@@ -7,12 +8,14 @@ const Discover = () => {
     return (
         <div className='mt-44 flex' id="discover">
             <div className='flex flex-col mt-8 ml-20 mr-16'>
-                <h1 className='text-spSize1 text-sp-gray2 font-bold'>Discover Your Perfect<br/> Home Today</h1>
+                <h1 className='text-spSize1 text-sp-gray2 font-bold'>Discover Your Perfect<br /> Home Today</h1>
                 <p className=" my-5 text-spSize2 text-discover-color">Welcome to your source for leasing and
-                    managing <br/> beautiful rental homes Indonesia</p>
-                <button className="font-semibold bg-sp-orange px-7 py-1 h-[45px] rounded-sm text-white mr-auto">Discover
-                    Now
-                </button>
+                    managing <br /> beautiful rental homes Indonesia</p>
+                <Link href={"/search"}>
+                    <button className="font-semibold bg-sp-orange px-7 py-1 h-[45px] rounded-sm text-white mr-auto">Discover
+                        Now
+                    </button>
+                </Link>
             </div>
 
 
@@ -20,7 +23,7 @@ const Discover = () => {
                 {discoverOptions.map((option) => {
                     return (
                         <div className="relative w-[255px] h-[350px] [&:nth-child(2)]:flex [&:nth-child(2)]:flex-col [&:nth-child(2)]:bottom-12 last:w-[69px]" key={option.src}>
-                            <ImageHolder src={option.src} firstText={option.firstText} secondText={option.secondText}/>
+                            <ImageHolder src={option.src} firstText={option.firstText} secondText={option.secondText} />
                         </div>
                     )
                 })}
