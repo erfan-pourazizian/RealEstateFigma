@@ -15,6 +15,6 @@ export const dropDownOptions = [
     option_2: "connect",
     link_2: "#connect",
     option_3: "Search",
-    link_3: "/Search",
+    link_3: "/search",
   },
 ];
