@@ -19,10 +19,10 @@ const Discover = () => {
             </div>
 
 
-            <div className='gap-8 w-[60%] grid grid-flow-col auto-cols-max'>
+            <div className='gap-6 w-[60%] grid grid-flow-col auto-cols-max'>
                 {discoverOptions.map((option) => {
                     return (
-                        <div className="relative w-[255px] h-[350px] [&:nth-child(2)]:flex [&:nth-child(2)]:flex-col [&:nth-child(2)]:bottom-12 last:w-[69px]" key={option.src}>
+                        <div className="relative w-[255px] h-[350px] [&:nth-child(2)]:flex [&:nth-child(2)]:flex-col [&:nth-child(2)]:bottom-12 last:w-[55px]" key={option.src}>
                             <ImageHolder src={option.src} firstText={option.firstText} secondText={option.secondText} />
                         </div>
                     )
