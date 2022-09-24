@@ -24,8 +24,8 @@ const InputHolder = ({inputName, img, alt, options, filter}) => {
 
     return (
         <>
-            <p className="mb-1">{inputName}</p>
-            <div className='flex items-center bg-sp-gray  h-[35px] '>
+            <p className="mb-3">{inputName}</p>
+            <div className='flex items-center bg-sp-gray  h-[45px] '>
                 <div className="ml-3 justify-self-center">
                     <Image
                         src={img}
