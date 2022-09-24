@@ -23,12 +23,14 @@ const Navbar = () => {
                         <DropDown dropDownDetails={dropDown} key={dropDown.name} />
                     )
                 })}
-                <Link href={'/search'} >
+                <Link href='/search' >
                     <a className='inline-flex justify-center  self-center text-spSize2 font-medium mr-8'>Search Rentals</a>
                 </Link>
-                <div className="border flex border-sp-orange rounded px-7 cursor-pointer">
-                    <a className='text-sp-orange self-center text-contactSize'>Contact Us</a>
-                </div>
+                <Link href='/contact-me'>
+                    <div className="border flex border-sp-orange rounded px-7 cursor-pointer">
+                        <a className='text-sp-orange self-center text-contactSize'>Contact Us</a>
+                    </div>
+                </Link>
             </div>
         </div>
     )
