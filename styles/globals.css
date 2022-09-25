@@ -31,8 +31,7 @@ a {
 }
 
 .spHoverButton1:hover {
-  border-color: rgba(255, 141, 27, 1);
-  border-width: 2px;
+  outline: 2px solid rgba(255, 141, 27, 1);
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   color: rgba(255, 141, 27, 1);
