@@ -12,6 +12,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     scroll-behavior: smooth;
 }
+::selection {
+  color: #ffff;
+  background: rgba(251, 146, 36, 1);
+}
 
 a {
   color: inherit;
@@ -24,4 +28,16 @@ a {
 
 #nprogress .bar {
   background: rgba(251, 146, 36, 1);
+}
+
+.spHoverButton1:hover {
+  border-color: rgba(255, 141, 27, 1);
+  border-width: 2px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  color: rgba(255, 141, 27, 1);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+  transition-timing-function: linear;
 }

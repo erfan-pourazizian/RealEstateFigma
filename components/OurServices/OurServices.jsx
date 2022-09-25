@@ -16,7 +16,8 @@ const services = () => {
           <p className='text-spSize2 text-sp-gray2 mt-5'>{houseOptions.mainParagraph}</p>
           <p className='text-sp-gray2 text-sm mt-5 w-[49%]'>{houseOptions.paragraph}</p>
           <Link href={houseOptions.buttonLink}>
-            <button className="font-semibold bg-sp-orange px-6 mt-5 py-1 h-[45px] rounded-sm text-white mr-auto cursor-pointer">{houseOptions.buttonName}</button>
+            <button className="font-semibold bg-sp-orange px-6 mt-5 py-1 h-[45px] rounded-sm text-white mr-auto cursor-pointer
+            spHoverButton1 hover:bg-inherit">{houseOptions.buttonName}</button>
           </Link>
         </div>
         <div className="ml-auto mr-40">
@@ -45,7 +46,8 @@ const services = () => {
           <p className='text-spSize2 text-sp-gray2 mt-5'>{officeOptions.mainParagraph}</p>
           <p className='text-sp-gray2 text-sm mt-5 w-[57%] ml-auto'>{officeOptions.paragraph}</p>
           <Link href={officeOptions.buttonLink}>
-            <button className="font-semibold bg-sp-orange px-6 mt-5 py-1 h-[45px] rounded-sm text-white mr-auto cursor-pointer">{officeOptions.buttonName}</button>
+            <button className="font-semibold bg-sp-orange px-6 mt-5 py-1 h-[45px] rounded-sm text-white mr-auto cursor-pointer
+             spHoverButton1 hover:bg-inherit">{officeOptions.buttonName}</button>
           </Link>
         </div>
       </div>

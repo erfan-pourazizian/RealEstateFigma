@@ -8,7 +8,7 @@ const Connect = () => {
         <p className='text-spSize2 text-white mt-4'>Get in touch or create account. We are 24/7 available</p>
       </div>
       <Link href="/search">
-        <button className=" bg-white w-[18%] px-4 py-2 h-[60px] rounded">Find Agent</button>
+        <button className=" bg-white w-[18%] px-4 py-2 h-[60px] rounded hover:bg-black hover:text-white transition duration-500 ease-in-out ">Find Agent</button>
       </Link>
     </div>
   )

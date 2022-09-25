@@ -12,7 +12,8 @@ const Discover = () => {
                 <p className=" my-5 text-spSize2 text-sp-gray2 text-discover-color">Welcome to your source for leasing and
                     managing beautiful rental homes Indonesia</p>
                 <Link href={"/search"}>
-                    <button className="font-semibold bg-sp-orange px-7 py-1 h-[45px] rounded-sm text-white mr-auto">Discover
+                    <button className="font-semibold bg-sp-orange px-7 py-1 h-[45px] rounded-sm text-white mr-auto
+                    spHoverButton1">Discover
                         Now
                     </button>
                 </Link>

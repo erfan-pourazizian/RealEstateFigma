@@ -10,7 +10,7 @@ const FeaturedProperties = ({ propertiesForRent }) => {
       </div>
       <Link href="/search">
         <div className="flex justify-center mt-9">
-          <button className=" bg-sp-orange px-4 py-2  rounded text-white ml-2">See More Property </button>
+          <button className=" bg-sp-orange px-4 py-2 rounded text-white ml-2 spHoverButton1">See More Property </button>
         </div>
       </Link>
     </div>
