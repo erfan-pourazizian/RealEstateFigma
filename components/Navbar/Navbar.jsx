@@ -24,11 +24,11 @@ const Navbar = () => {
                     )
                 })}
                 <Link href='/search' >
-                    <a className='inline-flex justify-center  self-center text-spSize2 font-medium mr-8'>Search Rentals</a>
+                    <a className='inline-flex justify-center  self-center text-spSize2 font-medium mr-8 hover:text-sp-orange3 transition duration-500 ease-in-out'>Search Rentals</a>
                 </Link>
                 <Link href='/contact-me'>
-                    <div className="border flex border-sp-orange rounded px-7 cursor-pointer">
-                        <a className='text-sp-orange self-center text-contactSize'>Contact Us</a>
+                    <div className="border flex border-sp-orange rounded px-7 cursor-pointer hover:bg-sp-orange3 transition duration-500 ease-in-out ">
+                        <a className='text-sp-orange self-center text-contactSize hover:text-white' >Contact Us</a>
                     </div>
                 </Link>
             </div>

@@ -26,36 +26,6 @@ const Footer = () => {
                 <SocialMedia socialMediaOptions={option} key={option.alt} />
               )
             })}
-            {/* <a href="#">
-              <div className="relative w-7 h-7">
-                <Image
-                  src="/Images/facebook.webp"
-                  alt="Facebook"
-                  layout="fill"
-                />
-              </div>
-            </a>
-
-            <a href="#">
-              <div className="relative w-7 h-7 ">
-                <Image
-                  src="/Images/instagram.webp"
-                  alt="instagram"
-                  layout="fill"
-                />
-              </div>
-            </a>
-
-            <a href="#">
-              <div className="relative w-7 h-7">
-                <Image
-                  src="/Images/twitter.webp"
-                  alt="twitter"
-                  layout="fill"
-                />
-              </div>
-            </a> */}
-
           </div>
         </div>
         {footerOptions.map((option) => {

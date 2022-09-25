@@ -23,7 +23,8 @@ const InputForm = () => {
                     })}
                         </div>
                     <button
-                        className="self-end col-span-2 w-48 bg-sp-orange px-7 py-1 h-[45px] rounded-sm text-white mx-10"
+                        className="self-end col-span-2 w-48 bg-sp-orange px-7 py-1 h-[45px] rounded-sm text-white mx-10
+                        spHoverButton1"
                         // onClick={}
                     >Submit
                     </button>
