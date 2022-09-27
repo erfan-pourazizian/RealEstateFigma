@@ -20,7 +20,7 @@ const DropDown = ({
                     </svg>
                 </div>
             </div>
-            <ul className="hidden hover:flex peer-hover:flex  flex-col absolute top-0 w-48  mt-10 bg-gray-100 rounded-lg shadow-xl hover:duration-500 hover:translate-x-4">
+            <ul className="hidden hover:flex peer-hover:flex peer-hover:animate-navbar-anim peer-hover:ease-in-out peer-hover:duration-300   flex-col absolute top-0 w-48  mt-10 bg-gray-100 rounded-lg shadow-xl hover:duration-500 hover:translate-x-4">
                 <LinkHandler link={link_1} option={option_1} />
                 <LinkHandler link={link_2} option={option_2} />
                 <LinkHandler link={link_3} option={option_3} />
