@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Main = () => {
   return (
     <div className="flex mt-[92px]" id='main'>
-      <div className='flex ml-36 flex-col '>
+      <div className='flex ml-[5%] flex-col '>
 
         <div className="mt-52  relative">
           <h1 className='text-MainH1Size text-sp-gray2 font-semibold' >Need to Rent a House?</h1>
