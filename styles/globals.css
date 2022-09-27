@@ -28,15 +28,13 @@ a {
 
 #nprogress .bar {
   background: rgba(251, 146, 36, 1);
+  height: 3px;
 }
 
 .spHoverButton1:hover {
   outline: 2px solid rgba(255, 141, 27, 1);
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: #ffff;
   color: rgba(255, 141, 27, 1);
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 500ms;
-  transition-timing-function: linear;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
 }
