@@ -14,7 +14,6 @@ const LinkColumn = ({
     link4,
   }
 }) => {
-  console.log(link1);
   return (
     <div className="flex flex-col">
       <p className="text-sm font-bold text-sp-gray2 mb-1">{part}</p>
