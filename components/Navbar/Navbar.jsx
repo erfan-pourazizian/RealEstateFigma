@@ -2,6 +2,7 @@ import Image from 'next/image'
 import DropDown from "./DropDown";
 import { dropDownOptions } from '../../utils/dropDownOptions';
 import Link from 'next/link';
+import LinkHandler from './LinkHandler';
 
 const Navbar = () => {
     return (
@@ -15,7 +16,7 @@ const Navbar = () => {
                     />
                 </div>
             </Link>
-            <div className='flex ml-auto '>
+            <div className='flex lg:hidden ml-auto '>
                 {dropDownOptions.map((dropDown) => {
                     return (
                         <DropDown dropDownDetails={dropDown} key={dropDown.name} />
@@ -30,6 +31,25 @@ const Navbar = () => {
                     </button>
                 </a>
             </div>
+
+
+            <div className="relative lg:flex hidden  ml-auto">
+                <div className="flex items-center">
+                    <div className='relative w-11 h-11'>
+                        <Image
+                            src="/Images/menu.webp"
+                            layout='fill'
+                            alt='icon'
+                        />
+                    </div>
+                </div>
+                <ul className="hidden hover:flex peer-hover:flex peer-hover:animate-navbar-anim peer-hover:ease-in-out peer-hover:duration-300 flex-col absolute top-0 w-48  mt-10 bg-gray-100 rounded-lg shadow-xl hover:duration-500 hover:translate-x-4">
+                    <LinkHandler link={"link_1"} option={"option_1"} />
+                    <LinkHandler link={"link_2"} option={"option_2"} />
+                    <LinkHandler link={"link_3"} option={"option_3"} />
+                </ul>
+            </div>
+
         </div>
     )
 }
