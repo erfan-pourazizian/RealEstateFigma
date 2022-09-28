@@ -11,7 +11,7 @@ const DropDown = ({
         link_3
     } }) => {
     return (
-        <div className="lg:mr-6 relative">
+        <div className="lg:mr-7 relative">
             <div className="peer flex flex-row  w-full px-3 py-2 md:text-lg lg:text-spSize2  font-medium hover:text-sp-orange3 transition duration-300 ease-in-out">
                 <span className="select-none">{name}</span>
                 <div className="flex items-center ml-3">
