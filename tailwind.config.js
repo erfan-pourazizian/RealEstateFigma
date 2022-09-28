@@ -6,13 +6,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      screens: {
-        '2xl': {'max': '1535px'},
-        'xl': {'max': '1279px'},
-        'lg': {'max': '1023px'},
-        'md': {'max': '767px'},
-        'sm': {'max': '639px'},
-      },
       colors: {
         "sp-orange": "rgba(255, 141, 27, 1)",
         "sp-orange2": "rgba(251, 146, 36, 1)",
