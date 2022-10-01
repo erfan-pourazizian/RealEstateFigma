@@ -42,9 +42,9 @@ const services = () => {
           </div>
         </div>
         <div className="bg-sp-gray3 relative mx-auto sm:mx-0 sm:absolute sm:w-2/3 py-2 sm:py-7 md:py-10 lg:py-24 xl:py-28 2xl:py-36 rounded-b sm:rounded px-3 sm:px-7 md:px-9 lg:px-14 xl:px-16 2xl:px-24 sm:text-right sm:right-0 sm:mr-20 sm:mt-3 pb-3 sm:pb-0">
-          <h1 className="flex my-4 sm:my-0 sm:static place-content-center sm:place-content-start text-xl md:text-2xl lg:text-3xl xl:text-rentH1Size text-sp-gray2 mt-4 font-bold">{officeOptions.title}</h1>
-          <p className='text-center sm:text-left text-sm sm:text-xs md:text-base xl:text-spSize2 text-sp-gray2 my-2 lg:my-3 xl:my-4 2xl:my-5 sm:ml-auto sm:w-[50%]'>{officeOptions.mainParagraph}</p>
-          <p className='text-center sm:text-left text-sp-gray2 text-sm sm:text-xs md:text-sm sm:w-[57%] sm:ml-auto'>{officeOptions.paragraph}</p>
+          <h1 className="flex my-4 sm:my-0 sm:static place-content-center sm:place-content-end text-xl md:text-2xl lg:text-3xl xl:text-rentH1Size text-sp-gray2 mt-4 font-bold">{officeOptions.title}</h1>
+          <p className='text-center sm:text-right text-sm sm:text-xs md:text-base xl:text-spSize2 text-sp-gray2 my-2 lg:my-3 xl:my-4 2xl:my-5 sm:ml-auto sm:w-[50%]'>{officeOptions.mainParagraph}</p>
+          <p className='text-center sm:text-right text-sp-gray2 text-sm sm:text-xs md:text-sm sm:w-[57%] sm:ml-auto'>{officeOptions.paragraph}</p>
           <Link href={officeOptions.buttonLink}>
             <button className="font-semibold flex mx-auto sm:mx-0 bg-sp-orange text-xs lg:text-sm 2xl:text-base px-5 md:px-6 mt-5 py-1 h-9 md:h-[45px] rounded-sm text-white sm:ml-auto cursor-pointer
              spHoverButton1 hover:bg-inherit place-items-center">{officeOptions.buttonName}</button>
