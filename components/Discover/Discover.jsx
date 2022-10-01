@@ -20,10 +20,10 @@ const Discover = () => {
             </div>
 
 
-            <div className='order-first sm:order-last ml-[5%] sm:ml-0 mt-14 gap-3 lg:gap-6 w-[60%] grid grid-flow-col auto-cols-max'>
+            <div className='order-first sm:order-none ml-[5%] sm:ml-0 mt-14 gap-3 lg:gap-6 sm:w-[60%] flex sm:grid grid-flow-col auto-cols-max'>
                 {discoverOptions.map((option) => {
                     return (
-                        <div className="relative  w-[120px] sm:w-[145px] lg:w-[175px] xl:w-[210px] 2xl:w-[255px] h-[218px] md:h-[248px]  lg:h-[270px] xl:h-[315px] 2xl:h-[350px] [&:nth-child(2)]:flex [&:nth-child(2)]:flex-col [&:nth-child(2)]:bottom-12 last:w-[55px] last:hidden last:lg:flex [&:nth-child(3)]:sm:hidden [&:nth-child(3)]:md:flex" key={option.src}>
+                        <div className="relative w-[120px] sm:w-[145px] lg:w-[175px] xl:w-[210px] 2xl:w-[255px] h-[218px] md:h-[248px]  lg:h-[270px] xl:h-[315px] 2xl:h-[350px] [&:nth-child(2)]:flex [&:nth-child(2)]:flex-col [&:nth-child(2)]:bottom-12 last:w-[55px] last:hidden last:lg:flex [&:nth-child(3)]:sm:hidden [&:nth-child(3)]:md:flex" key={option.src}>
                             <ImageHolder src={option.src} firstText={option.firstText} secondText={option.secondText} />
                         </div>
                     )
