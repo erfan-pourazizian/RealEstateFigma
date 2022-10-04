@@ -15,8 +15,8 @@ const Property = ({
                   }) => {
     return (
         <Link href={`/property/${externalID}`} passHref>
-            <div className='flex flex-wrap w-1/3  pt-0 justify-start cursor-pointer items-center px-3'>
-                <div className='relative '>
+            <div className='flex flex-col w-full sm:w-1/2 lg:w-1/3 pt-0 justify-start cursor-pointer px-3 mb-5'>
+                <div className='relative'>
                     <div className='absolute w-[25%] h-[13%] top-0 left-0 z-10'>
                         <Image
                             src="/Images/for-rent.webp"
@@ -24,7 +24,8 @@ const Property = ({
                             alt='for-rent'
                         />
                     </div>
-                    <div className="relative  w-[400px] h-[260px]">
+                    <div className="relative w-full h-[230px]  sm:h-[180px] md:h-[200px] lg:h-[190px] xl:h-[230px] 2xl:h-[280px]
+                    ">
                         <Image
                             src={coverPhoto ? coverPhoto.url : '/Images/default-house.webp'}
                             layout="fill"
@@ -33,7 +34,7 @@ const Property = ({
                         />
                     </div>
                 </div>
-                <div className='mt-4 '>
+                <div className='mt-4'>
                     <p className='text-lg text-sp-gray2 text-bold'>
                         {title.length > 30 ? `${title.substring(0, 30)}...` : title}
                     </p>
