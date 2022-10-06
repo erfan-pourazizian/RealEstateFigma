@@ -15,8 +15,8 @@ const LinkColumn = ({
   }
 }) => {
   return (
-    <div className="flex flex-col">
-      <p className="text-sm font-bold text-sp-gray2 mb-1">{part}</p>
+    <div className="flex flex-col mt-3 sm:mt-0">
+      <p className="text-sm font-bold text-sp-gray2 mb-[5px]">{part}</p>
       <LinkHandler link={link1} name={name1} />
       <LinkHandler link={link2} name={name2} />
       <LinkHandler link={link3} name={name3} />
