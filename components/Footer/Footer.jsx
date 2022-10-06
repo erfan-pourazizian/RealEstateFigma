@@ -18,7 +18,7 @@ const Footer = () => {
               alt="logo"
             />
           </div>
-          <p className='w-[40%] sm:w-[80%] lg:w-[50%] text-xs md:text-sm text-sp-gray2 my-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p className='w-[40%] sm:w-[80%] lg:w-[50%] text-xs md:text-sm text-sp-gray2 my-4 font-light sm:font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <div className='flex gap-2 md:gap-6'>
             {socialMediaOptions.map((option) => {
