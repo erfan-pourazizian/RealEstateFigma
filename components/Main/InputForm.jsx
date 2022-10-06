@@ -14,7 +14,7 @@ const InputForm = () => {
                     {options.map(opt => {
                         return (
                             <div
-                                className="col-span-2 xl:col-span-2 [&:nth-child(1)]:col-span-4 xl:[&:nth-child(1)]:col-span-7 xl:[&:nth-child(2)]:w-[140px]  xl:[&:nth-child(6)]:ml-2 xl:[&:nth-child(3)]:col-start-1 xl:[&:nth-child(3)]:col-end-4"
+                                className="col-span-2 xl:col-span-2 [&:nth-child(1)]:col-span-4 xl:[&:nth-child(1)]:col-span-7 xl:[&:nth-child(2)]:w-[140px]  xl:[&:nth-child(6)]:ml-2 [&:nth-child(3)]:col-span-6 sm:[&:nth-child(3)]:col-span-2 xl:[&:nth-child(3)]:col-start-1 xl:[&:nth-child(3)]:col-end-4"
                                 key={opt.inputName}>
                                 <InputHolder inputName={opt.inputName} img={opt.img} alt={opt.alt} options={opt.opt}
                                     filter={opt} />
