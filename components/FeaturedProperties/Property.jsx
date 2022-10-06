@@ -40,7 +40,7 @@ const Property = ({
                     </p>
                     <div className='flex items-center mt-1'>
 
-                        <div className="mr-3 flex self-end">
+                        <div className="mr-3 grid">
                             <Image
                                 src="/Images/location.webp"
                                 width={20}
@@ -53,7 +53,7 @@ const Property = ({
                     <div className="flex mt-2 ">
 
                         <div className="flex">
-                            <div className="mr-3 flex self-end ">
+                            <div className="mr-3 grid">
                                 <Image
                                     src="/Images/sqft.webp"
                                     width={20}
@@ -68,7 +68,7 @@ const Property = ({
                         </div>
 
                         <div className="flex">
-                            <div className="mr-3 ml-4 flex self-end ">
+                            <div className="mr-3 ml-4 grid">
                                 <Image
                                     src="/Images/beds.webp"
                                     width={20}
@@ -80,7 +80,7 @@ const Property = ({
                         </div>
 
                         <div className="flex">
-                            <div className="mr-3 ml-7 flex self-end ">
+                            <div className="mr-3 ml-7 grid">
                                 <Image
                                     src="/Images/bath.webp"
                                     width={20}
