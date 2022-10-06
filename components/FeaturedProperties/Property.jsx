@@ -35,7 +35,7 @@ const Property = ({
                     </div>
                 </div>
                 <div className='mt-4'>
-                    <p className='text-lg text-sp-gray2 text-bold'>
+                    <p className='text-base sm:text-lg text-sp-gray2 text-bold'>
                         {title.length > 30 ? `${title.substring(0, 30)}...` : title}
                     </p>
                     <div className='flex items-center mt-1'>
@@ -48,7 +48,7 @@ const Property = ({
                                 alt='location'
                             />
                         </div>
-                        <p className="text-contactSize text-sp-gray2 ">UAE, dubai </p>
+                        <p className="text-base sm:text-contactSize text-sp-gray2 ">UAE, dubai </p>
                     </div>
                     <div className="flex mt-2 ">
 
@@ -61,7 +61,7 @@ const Property = ({
                                     alt='sqft'
                                 />
                             </div>
-                            <p className="text-contactSize text-sp-gray2 ">
+                            <p className="text-base sm:text-contactSize text-sp-gray2 ">
                                 {area.toString().length > 5 ? area.toString().substring(0, 5) : area}
                                 sqft
                             </p>
@@ -76,7 +76,7 @@ const Property = ({
                                     alt='beds'
                                 />
                             </div>
-                            <p className="text-contactSize text-sp-gray2 ">{rooms} </p>
+                            <p className="text-base sm:text-contactSize text-sp-gray2 ">{rooms} </p>
                         </div>
 
                         <div className="flex">
@@ -88,10 +88,10 @@ const Property = ({
                                     alt='bath'
                                 />
                             </div>
-                            <p className="text-contactSize text-sp-gray2 ">{baths} </p>
+                            <p className="text-base sm:text-contactSize text-sp-gray2 ">{baths} </p>
                         </div>
                     </div>
-                    <h3 className="text-3xl font-bold text-sp-orange mt-3 mb-5">$ {price}</h3>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-sp-orange mt-3 mb-5">$ {price}</h3>
                 </div>
             </div>
         </Link>
