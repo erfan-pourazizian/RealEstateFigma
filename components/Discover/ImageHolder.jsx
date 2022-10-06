@@ -9,7 +9,7 @@ const ImageHolder = ({src,firstText,secondText}) => {
                 layout='fill'
             />
             <div className='relative mt-auto top-[50px]'>
-                <p className='text-sm md:text-base xl:text-spSize2 text-black z-10'>{firstText}</p>
+                <p className='font-light sm:font-normal text-sm md:text-base xl:text-spSize2 text-black z-10'>{firstText}</p>
                 <p className='text-[8px] sm:text-xs xl:text-sm text-black z-10'>{secondText}</p>
             </div>
         </>
