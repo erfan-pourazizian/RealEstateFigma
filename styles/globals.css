@@ -27,8 +27,8 @@ a {
 }
 
 #nprogress .bar {
-  background: rgba(251, 146, 36, 1);
-  height: 3px;
+  background: rgba(251, 146, 36, 1) !important;
+  height: 3px !important;
 }
 
 .spHoverButton1:hover {

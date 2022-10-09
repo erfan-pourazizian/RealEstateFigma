@@ -3,27 +3,28 @@ import "../components/Layout";
 import Layout from "../components/Layout";
 import NProgress from 'nprogress';
 import Router from 'next/router';
-import Head from 'next/head';
+import 'nprogress/nprogress.css'
+import { useEffect } from "react";
 
 
 function MyApp({Component, pageProps}) {
-    NProgress.configure({showSpinner: false});
-
-    Router.events.on('routeChangeStart', () => {
-        NProgress.start();
-    });
-
-    Router.events.on('routeChangeComplete', () => {
-        NProgress.done();
-    });
+    useEffect(() => {
+        const handleRouteStart = () => NProgress.start();
+        const handleRouteDone = () => NProgress.done();
+    
+        Router.events.on("routeChangeStart", handleRouteStart);
+        Router.events.on("routeChangeComplete", handleRouteDone);
+        Router.events.on("routeChangeError", handleRouteDone);
+    
+        return () => {
+          Router.events.off("routeChangeStart", handleRouteStart);
+          Router.events.off("routeChangeComplete", handleRouteDone);
+          Router.events.off("routeChangeError", handleRouteDone);
+        };
+      }, []);
 
     return (
         <>
-            <Head>
-                <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css'
-                      integrity='sha512-42kB9yDlYiCEfx2xVwq0q7hT4uf26FUgSIZBK8uiaEnTdShXjwr8Ip1V4xGJMg3mHkUt9nNuTDxunHF0/EgxLQ=='
-                      crossOrigin='anonymous' referrerPolicy='no-referrer'/>
-            </Head>
             <Layout>
                 <Component {...pageProps} />
             </Layout>
