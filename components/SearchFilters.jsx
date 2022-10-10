@@ -1,6 +1,6 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import router from 'next/router';
-import {filterData, getFilterValues} from "../utils/filterData";
+import { filterData, getFilterValues } from "../utils/filterData";
 
 const SearchFilters = () => {
     const [filters, setFilters] = useState(filterData)
@@ -8,7 +8,7 @@ const SearchFilters = () => {
     const searchProperties = (filterValues) => {
 
         const path = router.pathname;
-        const {query} = router;
+        const { query } = router;
 
         const values = getFilterValues(filterValues);
 
@@ -18,21 +18,35 @@ const SearchFilters = () => {
             }
         })
 
-        router.push({pathname: path, query})
+        router.push({ pathname: path, query })
     }
     return (
-        <div className="flex bg-sp-orange3 p-4 justify-center flex-wrap rounded-xl mt-5 mb-5">
+        <div className="flex bg-gradient-to-r 
+        from-blue-500 
+        to-orange-400 
+        via-purple-500 animate-gradient-xy p-4 justify-center flex-wrap rounded-xl mt-5 mb-5">
             {filters.map((filter) => (
                 <div key={filter.queryName} className="flex mx-1">
-                    <p className="self-center text-white">{filter.queryName + " :"}</p>
-                    <select
-                        placeholder={filter.placeholder}
-                        className="w-fit p-1 m-2 rounded-sm font-normal bg-gray-200 transition ease-in-out text-gray-700 hover:bg-white"
-                        onChange={(e) => searchProperties({[filter.queryName]: e.target.value})}>
-                        {filter?.items?.map((item) => (
-                            <option value={item.value} key={item.value}>{item.name}</option>
-                        ))}
-                    </select>
+                    <p className="self-center text-white text-xs md:text-sm lg:text-base">{filter.placeholder + " :"}</p>
+                    {filter.isRange
+                        ?
+                        filter?.items?.map((item, index) => (
+                            <div className='flex flex-wrap items-center mx-1 my-2 md:my-0 text-gray-300 text-xs md:text-sm lg:text-base outline-none' key={index}>
+                                <span className='mx-1'>{item.min?.value}</span>
+                                <input type='range' min={item.min?.value} max={item.max?.value} step="5000"/>
+                                <span className='mx-1'>{item.max?.value}</span>
+                            </div>
+                        )) :
+                        <select
+                            placeholder={filter.placeholder}
+                            className="w-fit md:p-1 m-2 rounded-sm font-normal bg-gray-200 transition ease-in-out text-gray-700 hover:bg-white
+                            text-xs md:text-sm lg:text-base my-2 outline-none"
+                            onChange={(e) => searchProperties({ [filter.queryName]: e.target.value })}>
+                            {filter?.items?.map((item) => (
+                                <option value={item.value} key={item.value}>{item.name}</option>
+                            ))}
+                        </select>
+                    }
                 </div>
             ))}
         </div>
