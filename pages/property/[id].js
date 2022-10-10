@@ -19,12 +19,12 @@ const PropertyDetails = ({
   },
 }) => {
   return (
-    <div className="m-14 mt-28 ">
+    <div className="mx-[4%] mt-28 ">
       <NextSeo
           title={title}
           description="you can watch more information here."
       />
-      <p className="font-semibold mb-5  text-3xl text-sp-orange2">{title}</p>
+      <h1 className="font-semibold mb-5 text-2xl md:text-3xl text-sp-orange2">{title}</h1>
       <SwiperHandler photos={photos} />
       <div className="w-full p-6">
         <div className="flex  pt-2 items-center">
@@ -39,7 +39,7 @@ const PropertyDetails = ({
         </div>
         <div className="flex mt-2 ">
           <div className="flex">
-            <div className="mr-3 flex self-end ">
+            <div className="mr-1 md:mr-3 grid">
               <Image src="/Images/sqft.webp" width={20} height={20} alt="sqft" />
             </div>
             <p className="text-contactSize text-sp-gray2 ">
@@ -50,15 +50,15 @@ const PropertyDetails = ({
             </p>
           </div>
 
-          <div className="flex">
-            <div className="mr-3 ml-4 flex self-end ">
+          <div className="flex ml-4">
+            <div className="mr-2 md:mr-3 grid">
               <Image src="/Images/beds.webp" width={20} height={20} alt="beds" />
             </div>
             <p className="text-contactSize text-sp-gray2 ">{rooms} </p>
           </div>
 
-          <div className="flex">
-            <div className="mr-3 ml-7 flex self-end ">
+          <div className="flex ml-4">
+            <div className="mr-2 md:mr-3 grid">
               <Image src="/Images/bath.webp" width={20} height={20} alt="bath" />
             </div>
             <p className="text-contactSize text-sp-gray2 ">{baths} </p>
@@ -67,7 +67,7 @@ const PropertyDetails = ({
         </div>
         <div>
           <p
-            className="text-sp-gray2 mt-4"
+            className="text-base text-sp-gray2 mt-4"
             dangerouslySetInnerHTML={{ __html: description }}
           />
         </div>
@@ -79,7 +79,7 @@ const PropertyDetails = ({
             {amenities?.map((item) =>
               item?.amenities?.map((amenity) => (
                 <p
-                  className="font-bold text-sp-orange2 text-lg p-2 bg-gray-200 m-1 rounded"
+                  className="font-bold text-sp-orange2 text-sm md:text-base lg:text-lg p-2 bg-gray-200 m-1 rounded"
                   key={amenity.text}
                 >
                   {amenity.text}
