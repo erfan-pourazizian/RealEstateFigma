@@ -40,7 +40,7 @@ const Property = ({
                     </p>
                     <div className='flex items-center mt-1'>
 
-                        <div className="mr-3 grid">
+                        <div className="mr-1 md:mr-3 grid">
                             <Image
                                 src="/Images/location.webp"
                                 width={20}
@@ -53,7 +53,7 @@ const Property = ({
                     <div className="flex mt-2 ">
 
                         <div className="flex">
-                            <div className="mr-3 grid">
+                            <div className="mr-1 md:mr-3 grid">
                                 <Image
                                     src="/Images/sqft.webp"
                                     width={20}
@@ -67,8 +67,8 @@ const Property = ({
                             </p>
                         </div>
 
-                        <div className="flex">
-                            <div className="mr-3 ml-4 grid">
+                        <div className="flex ml-4">
+                            <div className="mr-2 md:mr-3 grid">
                                 <Image
                                     src="/Images/beds.webp"
                                     width={20}
@@ -79,8 +79,8 @@ const Property = ({
                             <p className="text-base sm:text-contactSize text-sp-gray2 ">{rooms} </p>
                         </div>
 
-                        <div className="flex">
-                            <div className="mr-3 ml-7 grid">
+                        <div className="flex ml-4 md:ml-7">
+                            <div className="mr-2 md:mr-3 grid">
                                 <Image
                                     src="/Images/bath.webp"
                                     width={20}
