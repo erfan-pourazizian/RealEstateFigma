@@ -53,11 +53,22 @@ module.exports = {
       },
       animation: {
         "navbar-anim": "nav 0.5s ease-in-out ",
+        "gradient-xy": "gradient-xy 15s ease infinite",
       },
       keyframes: {
         nav: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
+        },
+        "gradient-xy": {
+          "0%, 100%": {
+            "background-size": "400% 400%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
         },
       },
     },
