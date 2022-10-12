@@ -12,7 +12,7 @@ import {
 
 export default function Home({ propertiesForRent }) {
   useEffect(() => {
-  console.log('use effect test')
+    toast.info(<a href="https://www.figma.com/file/hw31QbF5nkROsEBiq3ng34/RealEstate-HomePage?node-id=0%3A1" target={'_blank'} rel="noreferrer" >check out figma design <span className="text-red-400">here</span></a>, {autoClose:8000}) ;
   }, []);
 
   return (
