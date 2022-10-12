@@ -1,5 +1,6 @@
-import Head from "next/head";
+import { useEffect } from "react";
 import { fetchApi, baseUrl } from "../utils/fetchApi";
+import { toast } from "react-toastify";
 import {
   Connect,
   Main,
@@ -10,6 +11,10 @@ import {
 } from "../components";
 
 export default function Home({ propertiesForRent }) {
+  useEffect(() => {
+  console.log('use effect test')
+  }, []);
+
   return (
     <>
       <Main />
