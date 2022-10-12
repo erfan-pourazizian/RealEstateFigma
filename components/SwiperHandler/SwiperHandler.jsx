@@ -6,7 +6,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import { Autoplay, EffectFade, Pagination, Navigation } from "swiper";
 
-const SwiperHandler = ({photos}) => {
+const SwiperHandler = ({ photos }) => {
     return (
         <>
             <Swiper
@@ -28,7 +28,7 @@ const SwiperHandler = ({photos}) => {
                     return (
                         <SwiperSlide key={index}>
                             <div className="relative w-full h-[500px] ">
-                                <Image src={photo.url} alt="house-picture" layout="fill" />
+                                <Image src={photo.url} alt="house-picture" layout="fill" placeholder="blur" blurDataURL="/Images/no-image.webp" />
                             </div>
                         </SwiperSlide>
                     );

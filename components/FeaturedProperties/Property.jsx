@@ -1,4 +1,4 @@
-import Link from "next/dist/client/link";
+import Link from "next/link";
 import Image from 'next/image'
 
 
@@ -28,6 +28,8 @@ const Property = ({
                     ">
                         <Image
                             src={coverPhoto ? coverPhoto.url : '/Images/default-house.webp'}
+                            placeholder="blur"
+                            blurDataURL="/Images/no-image.webp"
                             layout="fill"
                             alt="house"
                             className="rounded-lg"
