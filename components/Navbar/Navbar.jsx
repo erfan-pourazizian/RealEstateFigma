@@ -23,7 +23,10 @@ const Navbar = () => {
                     )
                 })}
                 <Link href='/search' >
-                    <a className='inline-flex justify-center md:text-lg  self-center lg:text-spSize2 font-medium mr-8 hover:text-sp-orange3 transition duration-500 ease-in-out'>Search Rentals</a>
+                    <div className='relative flex justify-center self-center mr-7'>
+                        <a className='md:text-lg lg:text-spSize2 font-medium  hover:text-sp-orange3 transition duration-500 ease-in-out'>Search Rentals</a>
+                        <span className="animate-ping h-2 w-2 rounded-full bg-orange-400 opacity-75"></span>
+                    </div>
                 </Link>
                 <a href='https://www.linkedin.com/in/erfan-pourazizian/' target={'_blank'} rel="noreferrer">
                     <button className="border flex border-sp-orange rounded px-7 py-2 cursor-pointer hover:bg-sp-orange3 transition duration-500 ease-in-out text-sp-orange self-center text-contactSize hover:text-white">
