@@ -1,4 +1,4 @@
-import LinkHandler from './LinkHandler'
+import Link from 'next/link'
 
 const DropDown = ({
     dropDownDetails: {
@@ -21,9 +21,27 @@ const DropDown = ({
                 </div>
             </div>
             <ul className="hidden hover:flex peer-hover:flex peer-hover:animate-navbar-anim peer-hover:ease-in-out peer-hover:duration-300   flex-col absolute top-0 w-48  mt-10 bg-gray-100 rounded-lg shadow-xl hover:duration-500 hover:translate-x-4">
-                <LinkHandler link={link_1} option={option_1} />
-                <LinkHandler link={link_2} option={option_2} />
-                <LinkHandler link={link_3} option={option_3} />
+                <Link href={link_1}>
+                    <li>
+                        <a className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 transition duration-300 ease-in-out hover:text-white rounded">
+                            {option_1}
+                        </a>
+                    </li>
+                </Link>
+                <Link href={link_2}>
+                    <li>
+                        <a className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 transition duration-300 ease-in-out hover:text-white rounded">
+                            {option_2}
+                        </a>
+                    </li>
+                </Link>
+                <Link href={link_3}>
+                    <li>
+                        <a className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 transition duration-300 ease-in-out hover:text-white rounded">
+                            {option_3}
+                        </a>
+                    </li>
+                </Link>
             </ul>
         </div>
     )
