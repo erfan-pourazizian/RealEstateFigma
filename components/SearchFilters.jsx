@@ -23,7 +23,7 @@ const SearchFilters = () => {
     return (
         <div className="flex bg-gradient-to-r 
         from-blue-500 
-        to-orange-200 
+        to-orange-500 
         via-orange-400 animate-gradient-xy p-4 justify-center flex-wrap rounded-xl mt-5 mb-5">
             {filters.map((filter) => (
                 <div key={filter.queryName} className="flex mx-1">
