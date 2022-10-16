@@ -17,9 +17,9 @@ const Navbar = () => {
                 </div>
             </Link>
             <div className='hidden md:flex ml-auto '>
-                {dropDownOptions.map((dropDown) => {
+                {dropDownOptions.map((dropDown,index) => {
                     return (
-                        <DropDown dropDownDetails={dropDown} key={dropDown.name} />
+                        <DropDown dropDownDetails={dropDown} key={index} />
                     )
                 })}
                 <Link href='/search' >
