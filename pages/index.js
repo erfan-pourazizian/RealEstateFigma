@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { fetchApi, baseUrl } from "../utils/fetchApi";
+import { fetchApi, baseUrl } from "../api/fetchApi";
 import { toast } from "react-toastify";
 import {
   Connect,

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import DropDown from "./DropDown";
-import { dropDownOptions } from '../../utils/dropDownOptions';
+import { dropDownOptions } from '../../config/dropDownOptions';
 import Link from 'next/link';
 import MobileNavbar from './MobileNavbar';
 

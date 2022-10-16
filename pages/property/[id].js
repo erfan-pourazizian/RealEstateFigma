@@ -1,4 +1,4 @@
-import { baseUrl, fetchApi } from "../../utils/fetchApi";
+import { baseUrl, fetchApi } from "../../api/fetchApi";
 import Image from "next/image";
 import SwiperHandler from "../../components/SwiperHandler/SwiperHandler";
 import {NextSeo} from "next-seo";

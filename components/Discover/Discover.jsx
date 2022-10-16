@@ -1,5 +1,5 @@
 import ImageHolder from "./ImageHolder";
-import { discoverOptions } from "../../utils/discoverOptions";
+import { discoverOptions } from "../../config/discoverOptions";
 import Link from "next/link";
 
 const Discover = () => {

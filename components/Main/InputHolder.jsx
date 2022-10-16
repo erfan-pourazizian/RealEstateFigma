@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import {getFilterValues} from "../../utils/filterData";
+import {getFilterValues} from "../../config/filterData";
 import router from "next/router";
 import {submitHandler} from "./InputForm";
 import inputHolder from "./InputHolder";

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { houseOptions, officeOptions } from '../../utils/OurServicesOptions'
+import { houseOptions, officeOptions } from '../../config/OurServicesOptions'
 
 const services = () => {
   return (

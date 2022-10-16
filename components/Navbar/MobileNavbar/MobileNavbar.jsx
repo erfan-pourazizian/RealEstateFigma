@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
-import { mobileNavbarOptions } from "../../../utils/mobileNavbarOptions";
+import { mobileNavbarOptions } from "../../../config/mobileNavbarOptions";
 import Link from "next/link";
 
 const MobileNavbar = () => {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {fetchApi, baseUrl} from "../utils/fetchApi";
+import {fetchApi, baseUrl} from "../api/fetchApi";
 import Property from "../components/FeaturedProperties/Property";
 import SearchFilters from "../components/SearchFilters";
 import { NextSeo } from 'next-seo';

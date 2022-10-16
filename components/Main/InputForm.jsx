@@ -1,5 +1,5 @@
 import InputHolder from './InputHolder'
-import { options } from '../../utils/options'
+import { options } from '../../config/options'
 import router from "next/router";
 import Image from 'next/image'
 

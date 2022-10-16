@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import router from 'next/router';
-import { filterData, getFilterValues } from "../utils/filterData";
+import { filterData, getFilterValues } from "../config/filterData";
 
 const SearchFilters = () => {
     const [filters, setFilters] = useState(filterData)
