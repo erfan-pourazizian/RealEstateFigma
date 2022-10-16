@@ -31,7 +31,7 @@ const Footer = () => {
         <div className='flex mx-auto text-center sm:text-left flex-row gap-6 sm:gap-14 md:gap-20 lg:gap-28 xl:gap-40 2xl:gap-48 col-span-3'>
         {footerOptions.map((option) => {
           return (
-            <LinkColumn footerDetails={option} key={option.name1} />
+            <LinkColumn footerDetails={option} key={option.part} />
             )
           })}
           </div>
