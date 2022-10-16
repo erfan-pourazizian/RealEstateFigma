@@ -1,26 +1,23 @@
-import LinkHandler from "./LinkHandler"
-
+import Link from "next/link"
 
 const LinkColumn = ({
   footerDetails: {
     part,
-    name1,
-    link1,
-    name2,
-    link2,
-    name3,
-    link3,
-    name4,
-    link4,
+    LinkHandlerOptions
   }
 }) => {
   return (
     <div className="flex flex-col mt-3 sm:mt-0">
       <p className="text-sm font-bold text-sp-gray2 mb-[5px]">{part}</p>
-      <LinkHandler link={link1} name={name1} />
-      <LinkHandler link={link2} name={name2} />
-      <LinkHandler link={link3} name={name3} />
-      <LinkHandler link={link4} name={name4} />
+      {LinkHandlerOptions.map((opt) => {
+        return (
+          <Link href={`${opt.link}`} key={opt.name}>
+            <p className="my-[5px] w-auto text-sp-gray2 hover:text-sp-orange3 hover:translate-x-2 transition duration-500 ease-in-out text-sm cursor-pointer">
+              {opt.name}
+            </p>
+          </Link>
+        )
+      })}
     </div>
   )
 }

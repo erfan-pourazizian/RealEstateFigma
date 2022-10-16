@@ -1,34 +1,29 @@
 export const footerOptions = [
   {
     part: "Community",
-    name1: "For Rent",
-    link1: "/search",
-    name2: "For Seller",
-    link2: "/search",
-    name3: "For Buyer",
-    link3: "/search",
-    name4: "Search Home",
-    link4: "/search",
+    LinkHandlerOptions: [
+      { name: "For Rent", link: "/search" },
+      { name: "For Seller", link: "/search" },
+      { name: "For Buyer", link: "/search" },
+      { name: "Search Home", link: "/search" },
+    ],
   },
   {
     part: "About",
-    name1: "Our Story",
-    link1: "/search",
-    name2: "Careers",
-    link2: "/search",
-    name3: "Meet the team",
-    link3: "/search",
+    LinkHandlerOptions: [
+      { name: "Our Story", link: "/search" },
+      { name: "Careers", link: "/search" },
+      { name: "Meet the team", linkّ: "/search" },
+    ],
   },
   {
     part: "Contact",
-    name1: "Sawojajar club",
-    link1: "/search",
-    name2: "Simple text",
-    link2: "/search",
-    name3: "Malang Jawa timur",
-    link3: "/search",
-    name4: "Indonesia",
-    link4: "/search",
+    LinkHandlerOptions: [
+      { name: "Sawojajar club", link: "/search" },
+      { name: "Simple text", link: "/search" },
+      { name: "Malang Jawa timur", link: "/search" },
+      { name: "Indonesia", link: "/search" },
+    ],
   },
 ];
 
