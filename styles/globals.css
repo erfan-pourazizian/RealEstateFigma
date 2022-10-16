@@ -10,8 +10,9 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
 ::selection {
   color: #ffff;
   background: rgba(251, 146, 36, 1);
@@ -28,7 +29,12 @@ a {
 
 #nprogress .bar {
   background: rgba(251, 146, 36, 1) !important;
-  height: 3px !important;
+  height: 4px !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: rgba(251, 146, 36, 1) !important;
+  border-left-color: rgba(251, 146, 36, 1) !important;
 }
 
 .spHoverButton1:hover {
