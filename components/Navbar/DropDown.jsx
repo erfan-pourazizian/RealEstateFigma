@@ -17,7 +17,6 @@ const DropDown = ({
             </div>
             <ul className="hidden hover:flex peer-hover:flex peer-hover:animate-navbar-anim peer-hover:ease-in-out peer-hover:duration-300   flex-col absolute top-0 w-48  mt-10 bg-gray-100 rounded-lg shadow-xl hover:duration-500 hover:translate-x-4">
                 {LinkHandlerOptions.map((opt) => {
-                    console.log(opt);
                     return (
                         <LinkHandler options={opt} key={opt.link_1} />
                     )
