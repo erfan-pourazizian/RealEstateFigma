@@ -1,14 +1,9 @@
-import Link from 'next/link'
+import LinkHandler from "./LinkHandler";
 
 const DropDown = ({
     dropDownDetails: {
         name,
-        option_1,
-        link_1,
-        option_2,
-        link_2,
-        option_3,
-        link_3
+        LinkHandlerOptions
     } }) => {
     return (
         <div className="lg:mr-7 relative">
@@ -21,27 +16,13 @@ const DropDown = ({
                 </div>
             </div>
             <ul className="hidden hover:flex peer-hover:flex peer-hover:animate-navbar-anim peer-hover:ease-in-out peer-hover:duration-300   flex-col absolute top-0 w-48  mt-10 bg-gray-100 rounded-lg shadow-xl hover:duration-500 hover:translate-x-4">
-                <Link href={link_1}>
-                    <li>
-                        <a className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 transition duration-300 ease-in-out hover:text-white rounded">
-                            {option_1}
-                        </a>
-                    </li>
-                </Link>
-                <Link href={link_2}>
-                    <li>
-                        <a className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 transition duration-300 ease-in-out hover:text-white rounded">
-                            {option_2}
-                        </a>
-                    </li>
-                </Link>
-                <Link href={link_3}>
-                    <li>
-                        <a className="block px-4 py-2 text-gray-800 hover:bg-sp-orange3 transition duration-300 ease-in-out hover:text-white rounded">
-                            {option_3}
-                        </a>
-                    </li>
-                </Link>
+                {LinkHandlerOptions.map((opt) => {
+                    console.log(opt);
+                    return (
+                        <LinkHandler options={opt} key={opt.link_1} />
+                    )
+                })}
+
             </ul>
         </div>
     )

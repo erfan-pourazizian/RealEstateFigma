@@ -1,20 +1,42 @@
 export const dropDownOptions = [
   {
     name: "I'm a LandLord",
-    option_1: "Main part",
-    link_1: "#main",
-    option_2: "Discover",
-    link_2: "#discover",
-    option_3: "FeaturedProperties",
-    link_3: "#featuredProperties",
+    LinkHandlerOptions: [
+      {
+        option: "Main part",
+        link: "/#main",
+        src:"/Images/property.webp"
+      },
+      {
+        option: "Discover",
+        link: "/#discover",
+        src:"/Images/discover.webp"
+      },
+      {
+        option: "FeaturedProperties",
+        link: "/#featuredProperties",
+        src:"/Images/FeaturedProperties.webp"
+      },
+    ],
   },
   {
     name: "I'm a Tenant",
-    option_1: "peopleSection",
-    link_1: "#peopleSection",
-    option_2: "connect",
-    link_2: "#connect",
-    option_3: "Search",
-    link_3: "/search",
+    LinkHandlerOptions: [
+      {
+        option: "peopleSection",
+        link: "/#peopleSection",
+        src:"/Images/people.webp"
+      },
+      {
+        option: "connect",
+        link: "/#connect",
+        src:"/Images/connect.webp"
+      },
+      {
+        option: "Search",
+        link: "/search",
+        src:"/Images/search.webp"
+      },
+    ],
   },
 ];
