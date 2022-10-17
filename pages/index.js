@@ -24,6 +24,9 @@ export default function Home({ propertiesForRent }) {
       </a>,
       { autoClose: 15000 }
     );
+  }, []);
+
+  useEffect(() => {
     AOS.init();
   }, []);
 
