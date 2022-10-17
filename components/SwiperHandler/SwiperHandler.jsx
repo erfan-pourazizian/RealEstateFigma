@@ -22,12 +22,12 @@ const SwiperHandler = ({ photos }) => {
                 }}
                 navigation={true}
                 modules={[EffectFade, Autoplay, Pagination, Navigation]}
-                className="mySwiper rounded-[2rem]"
+                className="mySwiper rounded-[1.2rem] lg:rounded-[2rem]"
             >
-                {photos.map((photo, index) => {
+                {photos.slice(0,9).map((photo, index) => {
                     return (
                         <SwiperSlide key={index}>
-                            <div className="relative w-full h-[500px] ">
+                            <div className="relative w-full h-52 md:h-[500px] ">
                                 <Image src={photo.url} alt="house-picture" layout="fill" placeholder="blur" blurDataURL="/Images/no-image.webp" />
                             </div>
                         </SwiperSlide>
