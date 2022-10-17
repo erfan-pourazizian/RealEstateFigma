@@ -7,6 +7,7 @@ const ImageHolder = ({src,firstText,secondText}) => {
                 src={src}
                 alt='nature'
                 layout='fill'
+                quality={40}
             />
             <div className='relative mt-auto top-[50px]'>
                 <p className='font-light sm:font-normal text-sm md:text-base xl:text-spSize2 text-black z-10'>{firstText}</p>

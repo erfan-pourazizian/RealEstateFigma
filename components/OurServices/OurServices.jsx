@@ -31,15 +31,15 @@ const services = () => {
         </div>
         <div className='absolute -right-5 sm:-right-7 lg:-right-10 xl:-right-12 2xl:-right-8 -top-5 sm:-top-20 lg:-top-24 2xl:-top-28 sm:w-16 lg:w-28 xl:w-36 sm:h-16 lg:h-28 xl:h-36 -z-10'>
           <Image
-          src="/Images/dotted-square-1.png"
-          alt="Dotted Square"
-          layout='fill'/>
+            src="/Images/dotted-square-1.png"
+            alt="Dotted Square"
+            layout='fill' />
         </div>
         <div className='absolute  sm:-left-5 lg:-left-10 xl:-left-7 2xl:-left-10 sm:-bottom-10 lg:-bottom-5 2xl:-bottom-6 sm:w-14 md:w-16 lg:w-20 xl:w-24 sm:h-14 md:h-16 lg:h-20 xl:h-24'>
           <Image
-          src="/Images/dotted-square-2.png"
-          alt="Dotted Square"
-          layout='fill'/>
+            src="/Images/dotted-square-2.png"
+            alt="Dotted Square"
+            layout='fill' />
         </div>
       </div>
 
@@ -61,18 +61,20 @@ const services = () => {
             <button className="font-medium sm:font-semibold flex mx-auto sm:mx-0 bg-sp-orange text-xs lg:text-sm 2xl:text-base px-5 md:px-6 mt-5 py-1 h-9 md:h-[45px] rounded-sm text-white sm:ml-auto cursor-pointer
              spHoverButton1 hover:bg-inherit place-items-center">{officeOptions.buttonName}</button>
           </Link>
-        <div className='absolute sm:-right-3 md:-right-6 lg:-right-8 sm:-top-3 lg:-top-5 sm:w-10 md:w-14 lg:w-20 sm:h-10 md:h-14 lg:h-20'>
-          <Image
-          src="/Images/dotted-square-2.png"
-          alt="Dotted Square"
-          layout='fill'/>
-        </div>
+          <div className='absolute sm:-right-3 md:-right-6 lg:-right-8 sm:-top-3 lg:-top-5 sm:w-10 md:w-14 lg:w-20 sm:h-10 md:h-14 lg:h-20'>
+            <Image
+              src="/Images/dotted-square-2.png"
+              alt="Dotted Square"
+              layout='fill'
+              quality={50}
+            />
+          </div>
         </div>
         <div className='absolute -left-5 sm:-left-7 lg:-left-10 xl:-left-12 2xl:-left-16 -bottom-5 sm:-bottom-20 lg:-bottom-24 2xl:-bottom-20 sm:w-16 lg:w-28 xl:w-36 sm:h-16 lg:h-28 xl:h-36 -z-10'>
           <Image
-          src="/Images/dotted-square-1.png"
-          alt="Dotted Square"
-          layout='fill'/>
+            src="/Images/dotted-square-1.png"
+            alt="Dotted Square"
+            layout='fill' />
         </div>
       </div>
 

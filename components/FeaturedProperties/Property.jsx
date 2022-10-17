@@ -33,6 +33,7 @@ const Property = ({
                             layout="fill"
                             alt="house"
                             className="rounded-lg"
+                            quality={40}
                         />
                     </div>
                 </div>

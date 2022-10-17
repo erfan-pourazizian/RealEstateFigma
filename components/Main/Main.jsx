@@ -20,6 +20,7 @@ const Main = () => {
               src={"/Images/house.webp"}
               alt="house"
               layout='fill'
+              quality={50}
             />
           </div>
           <div className="relative  place-self-end w-[50px] h-[300px] md:h-[480px] lg:h-[530px] xl:h-[680px] hidden lg:flex">
