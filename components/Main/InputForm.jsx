@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const InputForm = () => {
     return (
-        <div className='flex flex-col py-1 absolute  bg-white shadow-sp-input rounded mt-[15rem] md:mt-[19rem] xl:mt-[21rem] lg:mt-[16rem] mr-4'>
+        <div data-aos="fade-right" className='flex flex-col py-1 absolute  bg-white shadow-sp-input rounded mt-[15rem] md:mt-[19rem] xl:mt-[21rem] lg:mt-[16rem] mr-4'>
             <p className="ml-8 text-base xl:text-spSize2 text-[#4F4F4F] mt-5">For Current rent estimate, please provide the following
                 :</p>
             <div className="flex xl:flex-row flex-col mb-5">

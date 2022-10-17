@@ -21,7 +21,7 @@ const SearchFilters = () => {
         router.push({ pathname: path, query })
     }
     return (
-        <div className="flex bg-gradient-to-r 
+        <div data-aos="zoom-in" data-aos-duration="2000" className="flex bg-gradient-to-r 
         from-blue-500 
         to-orange-500 
         via-orange-400 animate-gradient-xy p-4 justify-center flex-wrap rounded-xl mt-5 mb-5">

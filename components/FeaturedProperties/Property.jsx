@@ -15,7 +15,7 @@ const Property = ({
                   }) => {
     return (
         <Link href={`/property/${externalID}`} passHref>
-            <div className='flex flex-col w-full sm:w-1/2 lg:w-1/3 pt-0 justify-start cursor-pointer px-3 mb-5'>
+            <div data-aos="zoom-in-down" className='flex flex-col w-full sm:w-1/2 lg:w-1/3 pt-0 justify-start cursor-pointer px-3 mb-5'>
                 <div className='relative'>
                     <div className='absolute w-[25%] h-[13%] top-0 left-0 z-10'>
                         <Image
