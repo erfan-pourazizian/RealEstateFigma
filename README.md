@@ -2,7 +2,7 @@
 
 ![realstate-min](https://user-images.githubusercontent.com/91010211/191935988-8d4432f3-af36-4545-a63d-d9ca4dd4facb.png)
 
-#### This is a React(Next js) web application repository with a figma design. you can check out the design :point_right::point_right::point_right:[Here](https://www.figma.com/file/hw31QbF5nkROsEBiq3ng34/RealEstate-HomePage?node-id=0%3A1) :point_left::point_left::point_left:
+#### This is a React(Next js) web application repository with a figma design. you can check out the design [Here](https://www.figma.com/file/hw31QbF5nkROsEBiq3ng34/RealEstate-HomePage?node-id=0%3A1)
 
 
 ### Folder Structure:blush:
