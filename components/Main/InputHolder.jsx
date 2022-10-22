@@ -1,8 +1,7 @@
 import Image from 'next/image'
 import {getFilterValues} from "../../config/filterData";
 import router from "next/router";
-import {submitHandler} from "./InputForm";
-import inputHolder from "./InputHolder";
+
 
 const InputHolder = ({inputName, img, alt, options, filter}) => {
 
@@ -15,8 +14,6 @@ const InputHolder = ({inputName, img, alt, options, filter}) => {
                 query[item.name] = item.value
             }
         })
-
-        router.push({pathname: '/search', query})
 
     }
 

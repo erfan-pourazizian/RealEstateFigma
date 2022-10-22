@@ -4,6 +4,10 @@ import router from "next/router";
 import Image from 'next/image'
 
 const InputForm = () => {
+    const buttonHandler = () => {
+        router.push({pathname:'/search', 
+        query:{ ...router.query }})
+    } 
     return (
         <div data-aos="fade-right" className='flex flex-col py-1 absolute  bg-white shadow-sp-input rounded mt-[15rem] md:mt-[19rem] xl:mt-[21rem] lg:mt-[16rem] mr-4'>
             <p className="ml-8 text-base xl:text-spSize2 text-[#4F4F4F] mt-5">For Current rent estimate, please provide the following
@@ -25,7 +29,7 @@ const InputForm = () => {
                 <button
                     className="self-center mt-5 xl:self-end col-span-2 w-28 xl:w-36 bg-sp-orange px-4 xl:px-7 py-1 text-sm xl:text-base h-9 xl:h-[45px] rounded-sm text-white mx-10
                         spHoverButton1"
-                // onClick={}
+                onClick={buttonHandler}
                 >Submit
                 </button>
             </div>
