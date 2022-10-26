@@ -25,7 +25,7 @@ const Navbar = () => {
                 <Link href='/search' >
                     <div className='relative flex justify-center self-center mr-7'>
                         <a className='md:text-lg lg:text-spSize2  hover:text-sp-orange3 transition duration-500 ease-in-out'>Search Rentals</a>
-                        <span className="animate-ping h-2 w-2 rounded-full bg-orange-400 opacity-75"></span>
+                        <span className="animate-ping h-2 w-2 rounded-full bg-blue-700 opacity-75"></span>
                     </div>
                 </Link>
                 <a href='https://www.linkedin.com/in/erfan-pourazizian/' target={'_blank'} rel="noreferrer">
