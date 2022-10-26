@@ -12,15 +12,15 @@ const Search = ({properties}) => {
                 description="you can filter properties here."
             />
            <SearchFilters/>
-            <div className="flex flex-wrap justify-center mb-20">
+            <div className="flex flex-wrap justify-center mb-8">
                 {properties.map((property) => (
                     <Property property={property} key={property.id}/>
                 ))}
             </div>
             {properties.length === 0 && (
                 <div className="flex justify-center items-center flex-col my-5">
-                    <p className="text-3xl mt-3 mb-5 text-sp-orange2 font-semibold"> No Result Found</p>
-                    <div className="relative w-1/2 h-80 mb-20">
+                    <p className="text-xl lg:text-3xl mt-3 mb-5 text-sp-orange2 font-semibold"> No Result Found</p>
+                    <div className="relative w-1/2 h-72 lg:h-96 mb-20">
                         <Image alt="no result" src={"/images/no-results.webp"} layout="fill"/>
                     </div>
                 </div>
