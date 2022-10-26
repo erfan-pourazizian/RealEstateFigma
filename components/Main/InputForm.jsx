@@ -36,8 +36,8 @@ const InputForm = () => {
             <div className='absolute -bottom-3 sm:-bottom-7 lg:-bottom-12 xl:-bottom-16 2xl:-bottom-20 -left-3 sm:-left-5 lg:-left-9 xl:-left-10 2xl:-left-14 w-14 sm:w-20 lg:w-32 xl:w-36 2xl:w-40 h-14 sm:h-20 lg:h-32 xl:h-36 2xl:h-40 md:-z-10'>
                 <Image src="/Images/dotted-square-1.png" alt="dotted-square" layout='fill'  />
             </div>
-            <div className='absolute hidden md:flex md:-top-1 lg:-top-2 md:-right-1 lg:-right-3 md:w-12 lg:w-20 md:h-12 lg:h-20 z-10'>
-                <Image src="/Images/dotted-square-2.png" alt="dotted-square" layout='fill'  />
+            <div className='absolute hidden md:flex top-0 right-0 md:w-12 lg:w-16 md:h-12 lg:h-16 z-10'>
+                <Image src="/Images/dotted-square-4.png" alt="dotted-square" layout='fill'  />
             </div>
         </div>
     )
