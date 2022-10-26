@@ -18,7 +18,7 @@ export const filterData = [
       },
     ],
     isRange: true,
-    placeholder: "Min Price(AED)",
+    placeholder: "Min Price",
     queryName: "minPrice",
   },
   {
@@ -29,7 +29,7 @@ export const filterData = [
       },
     ],
     isRange: true,
-    placeholder: "Max Price(AED)",
+    placeholder: "Max Price",
     queryName: "maxPrice",
   },
   {

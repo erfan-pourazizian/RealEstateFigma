@@ -24,14 +24,14 @@ const SearchFilters = () => {
         <div data-aos="zoom-in" data-aos-duration="2000" className="flex bg-gradient-to-r 
         from-blue-500 
         to-orange-500 
-        via-orange-400 animate-gradient-xy p-4 justify-center flex-wrap rounded-xl mt-5 mb-5">
+        via-orange-600 animate-gradient-xy p-4 items-center sm:justify-center flex-col sm:flex-row sm:flex-wrap rounded-xl mt-5 mb-5">
             {filters.map((filter) => (
                 <div key={filter.queryName} className="flex mx-1">
                     <p className="self-center text-white text-xs md:text-sm lg:text-base">{filter.placeholder + " :"}</p>
                     {filter.isRange
                         ?
                         filter?.items?.map((item, index) => (
-                            <div className='flex flex-wrap items-center mx-1 my-2 md:my-0 text-gray-300 text-xs md:text-sm lg:text-base hover:outline-none' key={index}>
+                            <div className='flex  items-center mx-1 my-2 md:my-0 text-gray-300 text-xs md:text-sm lg:text-base hover:outline-none' key={index}>
                                 <span className='mx-1'>{item.min?.value}</span>
                                 <input type='range' min={item.min?.value} max={item.max?.value} step="10000"
                                 onChange={(e) => searchProperties({ [filter.queryName]: e.target.value })} />
