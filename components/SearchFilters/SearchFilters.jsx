@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import router from 'next/router';
-import { filterData, getFilterValues } from "../config/filterData";
+import { filterData, getFilterValues } from "../../config/filterData";
 
 const SearchFilters = () => {
     const [filters, setFilters] = useState(filterData)
@@ -20,6 +20,9 @@ const SearchFilters = () => {
 
         router.push({ pathname: path, query })
     }
+    const rangeHandler = () => {
+
+    }
     return (
         <div data-aos="zoom-in" data-aos-duration="2000" className="flex bg-gradient-to-r 
         from-blue-500 
@@ -34,7 +37,13 @@ const SearchFilters = () => {
                             <div className='flex  items-center mx-1 my-2 md:my-0 text-gray-300 text-xs md:text-sm lg:text-base hover:outline-none' key={index}>
                                 <span className='mx-1'>{item.min?.value}</span>
                                 <input type='range' min={item.min?.value} max={item.max?.value} step="10000"
-                                onChange={(e) => searchProperties({ [filter.queryName]: e.target.value })} />
+                                    onChange={(e) => {
+                                        clearTimeout
+                                        setTimeout(() => {
+                                            searchProperties({ [filter.queryName]: e.target.value })
+                                        }, 1000)
+
+                                    }} />
                                 <span className='mx-1'>{item.max?.value}</span>
                             </div>
                         )) :
