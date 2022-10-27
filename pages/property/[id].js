@@ -19,30 +19,30 @@ const PropertyDetails = ({
   },
 }) => {
   return (
-    <div className="mx-[4%] mt-28 ">
+    <div className="mx-[5%] lg:mx-[4%] mt-28">
       <NextSeo
           title={title}
           description="you can watch more information here."
       />
-      <h1 className="font-semibold mb-5 text-2xl md:text-3xl text-sp-orange2">{title}</h1>
+      <h1 className="font-semibold mb-6 text-2xl md:text-3xl text-center text-sp-orange2">{title}</h1>
       <SwiperHandler photos={photos} />
-      <div className="w-full p-6">
-        <div className="flex  pt-2 items-center">
-          <div className="pr-3 ">
+      <div className="w-full">
+        <div className="flex pt-2 items-center">
+          <div className="pr-2">
             {isVerified && (
               <Image src="/Images/verify.webp" alt="verified" width={24} height={24} />
             )}
           </div>
-          <p className="font-bold text-lg mb-2">
+          <p className="font-bold text-lg text-sp-gray2 mb-2">
             {price} {rentFrequency && `/ ${rentFrequency}`}
           </p>
         </div>
-        <div className="flex mt-2 ">
+        <div className="flex mt-2">
           <div className="flex">
             <div className="mr-1 md:mr-3 grid">
               <Image src="/Images/sqft.webp" width={20} height={20} alt="sqft" />
             </div>
-            <p className="text-contactSize text-sp-gray2 ">
+            <p className="text-base lg:text-contactSize text-sp-gray2 ">
               {area.toString().length > 5
                 ? area.toString().substring(0, 5)
                 : area}
@@ -54,20 +54,20 @@ const PropertyDetails = ({
             <div className="mr-2 md:mr-3 grid">
               <Image src="/Images/beds.webp" width={20} height={20} alt="beds" />
             </div>
-            <p className="text-contactSize text-sp-gray2 ">{rooms} </p>
+            <p className="text-base lg:text-contactSize text-sp-gray2 ">{rooms} </p>
           </div>
 
           <div className="flex ml-4">
             <div className="mr-2 md:mr-3 grid">
               <Image src="/Images/bath.webp" width={20} height={20} alt="bath" />
             </div>
-            <p className="text-contactSize text-sp-gray2 ">{baths} </p>
+            <p className="text-base lg:text-contactSize text-sp-gray2 ">{baths} </p>
           </div>
           <p className=" font-bold ml-4 text-sp-orange2 bg-gray-200 rounded px-4 ">{purpose}</p>
         </div>
         <div>
           <p
-            className="text-base text-sp-gray2 mt-4"
+            className="text-sm lg:text-base text-sp-gray2 mt-6"
             dangerouslySetInnerHTML={{ __html: description }}
           />
         </div>
