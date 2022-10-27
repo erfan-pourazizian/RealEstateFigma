@@ -5,7 +5,7 @@
 #### This is a React(Next js) web application repository with a figma design. you can check out the design [Here](https://www.figma.com/file/hw31QbF5nkROsEBiq3ng34/RealEstate-HomePage?node-id=0%3A1)
 
 
-### Folder Structure:blush:
+### Folder Structure
 ```
 .
 |   .babelrc
