@@ -31,7 +31,7 @@ const InputHolder = ({inputName, img, alt, options, filter}) => {
                         alt={alt}
                     />
                 </div>
-                <select defaultValue={'DEFAULT'} className="appearance-none bg-inherit w-full outline-none"
+                <select defaultValue={'DEFAULT'} className="appearance-none ml-2 bg-inherit w-full outline-none"
                         onChange={(e) => searchProperties({[filter.queryName]: e.target.value})}>
 
                     <option value="DEFAULT" hidden disabled/>
