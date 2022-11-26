@@ -15,7 +15,7 @@ export const dropDownOptions = [
       {
         option: "FeaturedProperties",
         link: "/#featuredProperties",
-        src:"/Images/FeaturedProperties.webp"
+        src:"/Images/featuredProperties.webp"
       },
     ],
   },
