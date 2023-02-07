@@ -3,14 +3,14 @@ import { fetchApi, baseUrl } from "../api/fetchApi";
 import { toast } from "react-toastify";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {
-  Connect,
-  Main,
-  Discover,
-  FeaturedProperties,
-  OurServices,
-  PeopleSection,
-} from "../components";
+import dynamic from "next/dynamic";
+
+const DynamicMain = dynamic(() => import('../components'))
+const DynamicConnect = dynamic(() => import('../components'))
+const DynamicDiscover = dynamic(() => import('../components'))
+const DynamicFeaturedProperties = dynamic(() => import('../components'))
+const DynamicOurServices = dynamic(() => import('../components'))
+const DynamicPeopleSection = dynamic(() => import('../components'))
 
 export default function Home({ propertiesForRent }) {
   useEffect(() => {
@@ -32,12 +32,12 @@ export default function Home({ propertiesForRent }) {
 
   return (
     <>
-      <Main />
-      <Discover />
-      <OurServices />
-      <FeaturedProperties propertiesForRent={propertiesForRent} />
-      <PeopleSection />
-      <Connect />
+      <DynamicMain />
+      <DynamicDiscover />
+      <DynamicOurServices />
+      <DynamicFeaturedProperties propertiesForRent={propertiesForRent} />
+      <DynamicPeopleSection />
+      <DynamicConnect />
     </>
   );
 }
