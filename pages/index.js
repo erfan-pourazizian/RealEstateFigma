@@ -5,12 +5,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import dynamic from "next/dynamic";
 
-const DynamicMain = dynamic(() => import('../components'))
-const DynamicConnect = dynamic(() => import('../components'))
-const DynamicDiscover = dynamic(() => import('../components'))
-const DynamicFeaturedProperties = dynamic(() => import('../components'))
-const DynamicOurServices = dynamic(() => import('../components'))
-const DynamicPeopleSection = dynamic(() => import('../components'))
+const DynamicMain = dynamic(() => import('../components/Main/Main'))
+const DynamicConnect = dynamic(() => import('../components/Connect/Connect'))
+const DynamicDiscover = dynamic(() => import('../components/Discover/Discover'))
+const DynamicFeaturedProperties = dynamic(() => import('../components/FeaturedProperties/FeaturedProperties'))
+const DynamicOurServices = dynamic(() => import('../components/OurServices/OurServices'))
+const DynamicPeopleSection = dynamic(() => import('../components/PeopleSection/PeopleSection'))
 
 export default function Home({ propertiesForRent }) {
   useEffect(() => {
