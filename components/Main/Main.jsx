@@ -14,27 +14,23 @@ const Main = () => {
         <InputForm />
       </div>
       <div className="md:flex grid grid-flow-col auto-cols-max gap-5 ml-auto -z-10">
-
-        <div className="relative w-[210px] sm:w-[400px] md:w-[540px] lg:w-[600px] xl:w-[690px] h-[240px] sm:h-[400px] md:h-[480px] lg:h-[530px] xl:h-[680px]">
-          <Image
-            src={"/Images/house.webp"}
-            alt="house"
-            layout='fill'
-            quality={50}
-            className="opacity-0 transition-opacity"
-            onLoadingComplete={(image) => {
-              image.classList.remove("opacity-0")
-            }}
-          />
-        </div>
-        <div className="relative  place-self-end w-[50px] h-[300px] md:h-[480px] lg:h-[530px] xl:h-[680px] hidden lg:flex">
-          <Image
-            src={"/Images/half-house.webp"}
-            alt="house"
-            layout='fill'
-          />
-        </div>
-
+       
+          <div className="relative w-[210px] sm:w-[400px] md:w-[540px] lg:w-[600px] xl:w-[690px] h-[240px] sm:h-[400px] md:h-[480px] lg:h-[530px] xl:h-[680px]">
+            <Image
+              src={"/Images/house.webp"}
+              alt="house"
+              layout='fill'
+              quality={50}
+            />
+          </div>
+          <div className="relative  place-self-end w-[50px] h-[300px] md:h-[480px] lg:h-[530px] xl:h-[680px] hidden lg:flex">
+            <Image
+              src={"/Images/half-house.webp"}
+              alt="house"
+              layout='fill'
+            />
+          </div>
+     
 
       </div>
     </div>
